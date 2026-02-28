@@ -1,0 +1,130 @@
+.topbar {
+  position: fixed;
+  top: 0;
+  left: var(--sidebar-w);
+  right: 0;
+  height: var(--topbar-h);
+  background: var(--bg-topbar);
+  border-bottom: 1px solid var(--border-topbar);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  z-index: 100;
+  backdrop-filter: var(--blur-glass);
+  box-shadow: var(--shadow-topbar);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-sm);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.hamburger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.hamburger:hover {
+  background: var(--bg-nav-hover);
+  color: var(--text-primary);
+}
+
+.backBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-btn-back);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-pill);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 5px 12px;
+  font-size: var(--fs-base);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-family: var(--font-brand);
+  backdrop-filter: var(--blur-glass);
+}
+
+.backBtn:hover {
+  background: var(--bg-card-hover);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semi);
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.5px;
+}
+
+.titleIcon {
+  margin-right: 2px;
+}
+
+.titleIcon i {
+  color: var(--icon-color);
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.dateChip {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  background: rgba(0, 103, 193, 0.1);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 4px 10px;
+  letter-spacing: 0.3px;
+}
+
+.logo {
+  height: 28px;
+  opacity: 0.85;
+  object-fit: contain;
+}
+
+@media (max-width: 860px) {
+  .topbar {
+    left: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 540px) {
+  .topbar {
+    padding: 0 12px;
+  }
+
+  .dateChip {
+    display: none;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .logo {
+    display: none;
+  }
+}

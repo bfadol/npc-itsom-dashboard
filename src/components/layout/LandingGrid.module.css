@@ -1,0 +1,214 @@
+.landing {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('/assets/r-bg.svg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: var(--bg-landing-overlay);
+  pointer-events: none;
+}
+
+.glow {
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 600px;
+  height: 500px;
+  background: var(--bg-landing-glow);
+  pointer-events: none;
+}
+
+.landingNav {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 36px;
+}
+
+.npcLogo img {
+  height: 56px;
+  object-fit: contain;
+}
+
+.ruyaRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.ruyaImg {
+  height: 44px;
+}
+
+.hero {
+  position: relative;
+  z-index: 10;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px 0;
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  font-size: var(--fs-lg);
+  color: var(--text-secondary);
+  margin-bottom: 50px;
+  font-weight: var(--fw-normal);
+}
+
+.sectionWrap {
+  width: 100%;
+  max-width: 1280px;
+  margin-bottom: 18px;
+}
+
+.sectionLabel {
+  width: 100%;
+  text-align: left;
+  margin: 0 auto 6px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: rgba(162, 149, 116, 0.85);
+  font-weight: var(--fw-bold);
+  padding-left: 4px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap-xl);
+  width: 100%;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-2xl);
+  padding: 48px 20px 36px;
+  cursor: pointer;
+  transition: all var(--transition-med) ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 175px;
+  backdrop-filter: var(--blur-glass);
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, rgba(162, 149, 116, 0.06), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-med);
+}
+
+.card:hover {
+  border-color: var(--border-card-hover);
+  background: var(--bg-card-hover);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-card);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.cardIcon {
+  width: var(--icon-wrap-size);
+  height: var(--icon-wrap-size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardIcon i {
+  font-size: var(--icon-size);
+  color: var(--brand-gold);
+  opacity: var(--icon-opacity);
+  transition: opacity var(--transition-med), transform var(--transition-med);
+}
+
+.card:hover .cardIcon i {
+  opacity: var(--icon-opacity-hover);
+  transform: scale(1.08);
+}
+
+.cardName {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-semi);
+  color: var(--text-secondary);
+  text-align: center;
+  letter-spacing: 0.2px;
+  transition: color var(--transition-med);
+}
+
+.card:hover .cardName {
+  color: var(--text-primary);
+}
+
+.landingFooter {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 24px;
+  font-size: var(--fs-base);
+  color: var(--text-muted);
+}
+
+@media (max-width: 1400px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .landingNav {
+    padding: 14px 20px;
+  }
+  .title {
+    font-size: clamp(20px, 5vw, 36px);
+  }
+}
+
+@media (max-width: 540px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .ruyaImg {
+    height: 32px;
+  }
+  .npcLogo img {
+    height: 40px;
+  }
+}

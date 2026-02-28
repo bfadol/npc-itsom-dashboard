@@ -1,0 +1,14 @@
+.dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--color-green-teal);
+  border-radius: 50%;
+  animation: pulse var(--pulse-duration) infinite;
+  margin-right: 4px;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}

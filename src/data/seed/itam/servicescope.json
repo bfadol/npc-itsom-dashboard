@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "source": "Service Scope Dashboard",
+    "dateRange": { "from": "2026-02-01", "to": "2026-02-28" },
+    "lastRefresh": "2026-02-21T14:30:00Z"
+  },
+  "kpis": {
+    "baselineAssets": {
+      "value": 1250,
+      "icon": "fa-solid fa-box",
+      "colorVariant": "blue",
+      "subtitle": "Contracted in Scope"
+    },
+    "totalInScope": {
+      "value": 1387,
+      "icon": "fa-solid fa-circle-check",
+      "colorVariant": "teal",
+      "trend": { "direction": "up", "delta": "+137 Additional Units", "isGood": false }
+    },
+    "additionalUnits": {
+      "value": 137,
+      "icon": "fa-solid fa-plus",
+      "colorVariant": "orange",
+      "subtitle": "Above Baseline (10.9%)"
+    },
+    "utilizationRate": {
+      "value": 110.9,
+      "unit": "%",
+      "icon": "fa-solid fa-bolt",
+      "colorVariant": "gold",
+      "subtitle": "Exceeds Baseline"
+    }
+  },
+  "scopeBreakdown": [
+    { "category": "Windows Servers", "baselineUnits": 220, "consumedUnits": 248, "additionalUnits": 28, "utilization": 112.7 },
+    { "category": "Linux Servers", "baselineUnits": 180, "consumedUnits": 175, "additionalUnits": -5, "utilization": 97.2 },
+    { "category": "Network Devices", "baselineUnits": 77, "consumedUnits": 77, "additionalUnits": 0, "utilization": 100 },
+    { "category": "Database Servers", "baselineUnits": 120, "consumedUnits": 143, "additionalUnits": 23, "utilization": 119.2 },
+    { "category": "Storage & Backup", "baselineUnits": 85, "consumedUnits": 92, "additionalUnits": 7, "utilization": 108.2 },
+    { "category": "URLs / Web Apps", "baselineUnits": 38, "consumedUnits": 38, "additionalUnits": 0, "utilization": 100 },
+    { "category": "End-user Devices", "baselineUnits": 530, "consumedUnits": 614, "additionalUnits": 84, "utilization": 115.8 }
+  ],
+  "totals": {
+    "baselineUnits": 1250,
+    "consumedUnits": 1387,
+    "additionalUnits": 137,
+    "utilization": 110.9
+  }
+}

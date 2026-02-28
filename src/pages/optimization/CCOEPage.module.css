@@ -1,0 +1,167 @@
+/* ── CCOE Page styles ── */
+
+/* Data source label */
+.dataSourceLabel {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  padding: 8px 14px;
+  background: rgba(0, 40, 100, 0.08);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-card);
+}
+
+.dataSourceLabel strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Stacked bar chart */
+.stackedSection {
+  margin-bottom: var(--gap-md);
+}
+
+.stackedLegend {
+  display: flex;
+  gap: 14px;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 9px;
+  color: var(--text-muted);
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.stackedRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 5px;
+}
+
+.stackedLabel {
+  width: 72px;
+  text-align: right;
+  font-size: 10px;
+  color: var(--text-muted);
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.stackedBar {
+  flex: 1;
+  display: flex;
+  height: 20px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.stackedSeg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.85);
+  min-width: 18px;
+}
+
+.stackedTotal {
+  width: 28px;
+  text-align: right;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
+
+/* Sprint timeline */
+.sprintTimeline {
+  margin-bottom: var(--gap-md);
+}
+
+.monthRuler {
+  display: flex;
+  margin-left: 200px;
+  margin-bottom: 6px;
+}
+
+.monthCell {
+  flex: 1;
+  font-size: 9px;
+  color: var(--text-muted);
+  text-align: center;
+  border-left: 1px solid rgba(162, 149, 116, 0.15);
+  padding: 2px 0;
+}
+
+.sprintRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.sprintLabel {
+  width: 200px;
+  font-size: 10px;
+  color: var(--text-primary);
+  padding-right: 10px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sprintTrack {
+  flex: 1;
+  position: relative;
+  height: 22px;
+  background: rgba(0, 40, 100, 0.06);
+  border-radius: 3px;
+}
+
+.sprintBar {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.sprintClosed {
+  background: linear-gradient(90deg, #8b1a1a, #c0392b);
+}
+
+.sprintActive {
+  background: linear-gradient(90deg, #1a3a6c, #2471a3);
+}
+
+.sprintParent {
+  background: rgba(162, 149, 116, 0.12);
+}
+
+/* Epic table totals */
+.totalRow {
+  font-weight: 700;
+  color: var(--brand-gold);
+}

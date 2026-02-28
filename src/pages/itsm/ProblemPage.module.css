@@ -1,0 +1,108 @@
+/* ── Problem Page specific styles ── */
+
+/* Status overview grid */
+.statusGrid {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.statusItem {
+  flex: 1;
+  min-width: 80px;
+  text-align: center;
+  padding: 10px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border-card);
+  background: var(--bg-card);
+}
+
+.statusItemLabel {
+  font-size: 9px;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.statusItemValue {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Large percentage display */
+.bigPct {
+  text-align: center;
+  padding: 16px 0 10px;
+}
+
+.bigPctNumber {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.bigPctUnit {
+  font-size: 22px;
+  color: var(--text-muted);
+}
+
+.bigPctFormula {
+  font-size: 10px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.bigPctSub {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.bigPctSubVal {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-left: 4px;
+}
+
+/* Root cause list */
+.rcList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Age breakdown */
+.ageRow {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.ageBox {
+  flex: 1;
+  text-align: center;
+  padding: 10px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border-card);
+}
+
+.ageBoxLabel {
+  font-size: 9px;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.ageBoxValue {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+}

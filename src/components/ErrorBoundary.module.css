@@ -1,0 +1,82 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 40px 20px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-2xl);
+  padding: 48px 40px;
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+  backdrop-filter: blur(20px);
+}
+
+.icon {
+  font-size: 48px;
+  color: var(--color-orange);
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.message {
+  font-size: var(--fs-base);
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 20px;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-base);
+  font-family: var(--font-brand);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: 1px solid var(--border-card);
+}
+
+.btnPrimary {
+  composes: btn;
+  background: var(--brand-accent);
+  color: var(--text-primary);
+  border-color: var(--brand-accent);
+}
+
+.btnPrimary:hover {
+  filter: brightness(1.15);
+}
+
+.btnSecondary {
+  composes: btn;
+  background: var(--bg-card);
+  color: var(--text-secondary);
+}
+
+.btnSecondary:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+}

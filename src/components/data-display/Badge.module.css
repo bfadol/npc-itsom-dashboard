@@ -1,0 +1,52 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 2px 7px;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-semi);
+  letter-spacing: 0.3px;
+}
+
+.red {
+  background: rgba(255, 90, 101, 0.20);
+  color: var(--color-red);
+  border: 1px solid rgba(255, 90, 101, 0.35);
+}
+
+.orange {
+  background: rgba(201, 123, 48, 0.20);
+  color: var(--color-orange);
+  border: 1px solid rgba(201, 123, 48, 0.30);
+}
+
+.green {
+  background: rgba(5, 193, 104, 0.20);
+  color: var(--color-green);
+  border: 1px solid rgba(5, 193, 104, 0.30);
+}
+
+.blue {
+  background: rgba(14, 58, 130, 0.25);
+  color: var(--color-blue);
+  border: 1px solid rgba(14, 58, 130, 0.40);
+}
+
+.gray {
+  background: rgba(100, 120, 160, 0.15);
+  color: var(--text-muted);
+  border: 1px solid rgba(100, 120, 160, 0.20);
+}
+
+.gold {
+  background: rgba(162, 149, 116, 0.15);
+  color: var(--brand-gold);
+  border: 1px solid rgba(162, 149, 116, 0.30);
+}
+
+.purple {
+  background: rgba(100, 50, 140, 0.20);
+  color: var(--color-purple);
+  border: 1px solid rgba(100, 50, 140, 0.30);
+}

@@ -1,0 +1,62 @@
+.deviceCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-2xl);
+  padding: var(--pad-card);
+  backdrop-filter: var(--blur-glass);
+}
+
+.title {
+  font-size: var(--fs-xs);
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.title i {
+  font-size: 13px;
+}
+
+.gauge {
+  display: block;
+  margin: 0 auto;
+}
+
+.num {
+  font-family: var(--font-display);
+  font-size: var(--fs-3xl);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  line-height: 1;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.avail {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 6px;
+  font-size: var(--fs-xs);
+  justify-content: center;
+}
+
+.availGreen {
+  color: var(--color-green-teal);
+  font-weight: var(--fw-bold);
+  font-family: var(--font-display);
+  font-size: 15px;
+}
+
+.availRed {
+  color: var(--color-red-bright);
+  font-weight: var(--fw-bold);
+  font-family: var(--font-display);
+  font-size: 15px;
+}
+
+.availLabel {
+  color: var(--text-muted);
+}

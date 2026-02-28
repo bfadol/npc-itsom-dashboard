@@ -1,0 +1,35 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 7px;
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+}
+
+.legDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.legVal {
+  margin-left: auto;
+  font-family: var(--font-display);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+}

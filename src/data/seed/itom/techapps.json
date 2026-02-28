@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "source": "Technical Applications Dashboard",
+    "dateRange": { "from": "2026-02-01", "to": "2026-02-28" },
+    "lastRefresh": "2026-02-21T14:30:00Z",
+    "category": "ITOM / Observability"
+  },
+  "kpis": {
+    "healthy": {
+      "value": 38,
+      "icon": "fa-solid fa-circle-check",
+      "colorVariant": "teal",
+      "subtitle": "Technical Services"
+    },
+    "down": {
+      "value": 3,
+      "icon": "fa-solid fa-circle-xmark",
+      "colorVariant": "red",
+      "subtitle": "Critical Failures"
+    },
+    "degraded": {
+      "value": 6,
+      "icon": "fa-solid fa-triangle-exclamation",
+      "colorVariant": "orange",
+      "subtitle": "Performance Issues"
+    },
+    "maintenance": {
+      "value": 2,
+      "icon": "fa-solid fa-wrench",
+      "colorVariant": "blue",
+      "subtitle": "Planned Windows"
+    },
+    "total": {
+      "value": 49,
+      "icon": "fa-solid fa-chart-bar",
+      "colorVariant": "gold",
+      "subtitle": "Technical Services"
+    }
+  },
+  "services": [
+    { "name": "ITSM-DB-Prod", "type": "Database", "status": "Healthy", "availability": 100, "cpu": "42%", "memory": "61%", "host": "srv-db-01" },
+    { "name": "API Gateway", "type": "Middleware", "status": "Down", "availability": 94.1, "cpu": "N/A", "memory": "N/A", "host": "srv-api-02" },
+    { "name": "Identity Service", "type": "Auth", "status": "Healthy", "availability": 99.9, "cpu": "18%", "memory": "35%", "host": "srv-auth-01" },
+    { "name": "Log Aggregator", "type": "Monitoring", "status": "Degraded", "availability": 97.3, "cpu": "89%", "memory": "78%", "host": "srv-log-01" },
+    { "name": "SMTP Relay", "type": "Email", "status": "Healthy", "availability": 99.6, "cpu": "12%", "memory": "28%", "host": "srv-smtp-01" },
+    { "name": "Backup Service", "type": "Storage", "status": "Maintenance", "availability": 98.8, "cpu": "--", "memory": "--", "host": "srv-bkp-01" }
+  ]
+}

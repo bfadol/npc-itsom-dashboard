@@ -1,0 +1,122 @@
+/* ── FinOps Page styles ── */
+
+/* Mini stat cards (Subscriptions / Resource Groups / Resources) */
+.miniStats {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.miniStat {
+  flex: 1;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 6px;
+  border: 1px solid var(--border-card);
+  background: rgba(0, 40, 100, 0.06);
+}
+
+.miniStatLabel {
+  font-size: 9px;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.miniStatValue {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Cost driver row with delta arrow */
+.driverRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(162, 149, 116, 0.08);
+}
+
+.driverRow:last-child {
+  border-bottom: none;
+}
+
+.driverName {
+  font-size: 10px;
+  color: var(--text-muted);
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 8px;
+}
+
+.driverCost {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  min-width: 60px;
+  text-align: right;
+}
+
+.driverDelta {
+  font-size: 9px;
+  font-weight: 600;
+  min-width: 50px;
+  text-align: right;
+}
+
+.deltaUp {
+  color: var(--color-red);
+}
+
+.deltaDown {
+  color: var(--color-green-teal);
+}
+
+/* Recommendation stat boxes */
+.recStats {
+  display: flex;
+  gap: 8px;
+  margin-bottom: var(--gap-md);
+}
+
+.recStat {
+  flex: 1;
+  text-align: center;
+  border-radius: 8px;
+  padding: 10px 6px;
+  border: 1px solid var(--border-card);
+  background: rgba(0, 40, 100, 0.06);
+}
+
+.recStatLabel {
+  font-size: 9px;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.recStatValue {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Coverage label */
+.coverageLabel {
+  font-size: 9px;
+  color: var(--text-dim);
+  text-align: right;
+  margin-top: 6px;
+}
+
+/* Budget over cell */
+.overBudget {
+  color: var(--color-red);
+  font-weight: 700;
+}

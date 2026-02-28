@@ -1,0 +1,144 @@
+/* ── Lifecycle Page styles ── */
+
+/* Filter bar */
+.filterBar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  backdrop-filter: blur(20px);
+}
+
+.filterSelect {
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: rgba(0, 40, 100, 0.12);
+  color: var(--text-primary);
+  font-size: 11px;
+  font-family: var(--font-brand);
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.filterSelect:focus { outline: none; border-color: var(--brand-gold); }
+
+.filterLabel {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Stacked bar list */
+.stackedList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stackedRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stackedLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.stackedName {
+  font-size: 10px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.stackedTotal {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.stackedBar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.stackedSeg {
+  height: 100%;
+  transition: width 0.4s ease;
+}
+
+.stackedLegend {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 9px;
+  color: var(--text-muted);
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* Risk heatmap grid */
+.riskGrid {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.riskCell {
+  flex: 1;
+  min-width: 80px;
+  text-align: center;
+  padding: 10px 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border-card);
+  background: rgba(0, 40, 100, 0.06);
+}
+
+.riskCellLabel {
+  font-size: 9px;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.riskCellVal {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Message box */
+.messageBox {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+  background: rgba(0, 40, 100, 0.08);
+  border-radius: 8px;
+}

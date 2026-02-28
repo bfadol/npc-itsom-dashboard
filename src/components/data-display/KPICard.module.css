@@ -1,0 +1,102 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-2xl);
+  padding: var(--pad-kpi);
+  backdrop-filter: var(--blur-glass);
+  display: flex;
+  flex-direction: column;
+  color: var(--text-primary);
+  position: relative;
+  overflow: hidden;
+}
+
+.compact {
+  padding: 14px 16px;
+  border-radius: 10px;
+}
+
+/* Color variants */
+.tealL   { border-left: 1px solid var(--border-card); }
+.redL    { border-left: 1px solid var(--border-card); }
+.orangeL { border-left: 1px solid var(--border-card); }
+.blueL   { border-left: 1px solid var(--border-card); }
+.goldL   { border-left: 1px solid var(--border-card); }
+.greenL  { border-left: 1px solid var(--border-card); }
+.purpleL { border-left: 1px solid var(--border-card); }
+
+.label {
+  font-size: var(--fs-sm);
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+  font-weight: var(--fw-medium);
+}
+
+.label i {
+  font-size: 11px;
+  margin-right: 3px;
+  vertical-align: middle;
+  opacity: 0.85;
+}
+
+.subtitle {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.value {
+  font-family: var(--font-display);
+  font-size: var(--fs-kpi);
+  font-weight: var(--fw-bold);
+  line-height: 1;
+  color: var(--text-primary);
+  margin-top: 12px;
+}
+
+.unit {
+  font-size: 20px;
+  font-weight: var(--fw-medium);
+  color: var(--text-secondary);
+  margin-left: 2px;
+}
+
+.sub {
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: var(--fs-md);
+  color: var(--text-kpi-sub);
+  margin-top: 8px;
+}
+
+.up {
+  color: var(--color-green) !important;
+}
+
+.down {
+  color: var(--color-red) !important;
+}
+
+.trendLabel {
+  color: var(--text-kpi-sub);
+  font-size: var(--fs-sm);
+}
+
+.progWrap {
+  margin-top: 10px;
+}
+
+.progBar {
+  height: var(--prog-height);
+  background: var(--prog-track);
+  border-radius: var(--prog-radius);
+  overflow: hidden;
+}
+
+.progFill {
+  height: 100%;
+  border-radius: var(--prog-radius);
+  transition: var(--prog-transition);
+}

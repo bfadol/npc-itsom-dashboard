@@ -1,0 +1,86 @@
+{
+  "metadata": {
+    "source": "Azure DevOps (CCOE)",
+    "dateRange": { "from": "2025-09-22", "to": "2026-01-29" },
+    "lastRefresh": "2026-02-09T22:44:23Z",
+    "dataSource": "Data Source - Azure DevOps (CCOE)",
+    "selectedAreas": 1
+  },
+  "kpis": {
+    "epics": {
+      "value": 44,
+      "icon": "fa-solid fa-crown",
+      "colorVariant": "blue",
+      "trend": { "direction": "up", "delta": 43, "label": "vs Last Month", "isGood": true }
+    },
+    "features": {
+      "value": 264,
+      "icon": "fa-solid fa-trophy",
+      "colorVariant": "red",
+      "trend": { "direction": "up", "delta": 81, "label": "vs Last Month", "isGood": true }
+    },
+    "userStoriesTotal": {
+      "value": 1019,
+      "icon": "fa-solid fa-book",
+      "colorVariant": "gold",
+      "trend": { "direction": "up", "delta": 82, "label": "vs Last Month", "isGood": true }
+    },
+    "userStoriesDone": {
+      "value": 87,
+      "icon": "fa-solid fa-circle-check",
+      "colorVariant": "teal",
+      "trend": { "direction": "up", "delta": 39, "label": "vs Last Month", "isGood": true }
+    }
+  },
+  "featuresTypeDistribution": [
+    { "type": "Deploy", "total": 41, "active": 35, "closed": 4, "new": 2 },
+    { "type": "Test", "total": 40, "active": 36, "closed": 1, "new": 3 },
+    { "type": "Build", "total": 38, "active": 30, "closed": 6, "new": 2 },
+    { "type": "Design", "total": 38, "active": 30, "closed": 6, "new": 2 },
+    { "type": "Govern", "total": 37, "active": 33, "closed": 3, "new": 1 },
+    { "type": "Go-Live", "total": 35, "active": 31, "closed": 4, "new": 0 },
+    { "type": "Document", "total": 34, "active": 29, "closed": 3, "new": 2 }
+  ],
+  "progressDonuts": {
+    "epics": {
+      "new": 68,
+      "active": 23,
+      "closed": 5
+    },
+    "features": {
+      "new": 84.85,
+      "active": 4.55,
+      "closed": 10.23
+    },
+    "userStories": {
+      "new": 90.28,
+      "active": 0.98,
+      "closed": 8.24
+    }
+  },
+  "sprintTimeline": [
+    { "name": "Cloud Centre of Excellence (CCOE)", "type": "parent", "start": null, "end": null },
+    { "name": "CCOE \\ November Sprint", "type": "sprint", "startPct": 0, "widthPct": 29, "status": "closed" },
+    { "name": "CCOE \\ December Sprint", "type": "sprint", "startPct": 28, "widthPct": 52, "status": "closed" },
+    { "name": "CCOE \\ January Sprint", "type": "sprint", "startPct": 68, "widthPct": 5, "status": "active" }
+  ],
+  "sprintMonths": ["Nov 2025", "Dec 2025", "Jan 2026", "Feb 2026"],
+  "epicImplementation": [
+    { "name": "Disaster Recovery Initiative", "featuresCount": 9, "completed": 0, "inProgress": 2, "notStarted": 7, "pocPct": null },
+    { "name": "Scale AI Workload", "featuresCount": 8, "completed": 5, "inProgress": 2, "notStarted": 1, "pocPct": 62.50 },
+    { "name": "(GCP) Landing Zone", "featuresCount": 7, "completed": 0, "inProgress": 0, "notStarted": 7, "pocPct": null },
+    { "name": "AI Base Line", "featuresCount": 7, "completed": 0, "inProgress": 0, "notStarted": 7, "pocPct": null },
+    { "name": "Azure Backup", "featuresCount": 7, "completed": 0, "inProgress": 0, "notStarted": 7, "pocPct": null },
+    { "name": "Azure Monitor", "featuresCount": 7, "completed": 0, "inProgress": 0, "notStarted": 7, "pocPct": null },
+    { "name": "Azure Native Backup", "featuresCount": 7, "completed": 0, "inProgress": 0, "notStarted": 7, "pocPct": null },
+    { "name": "Census", "featuresCount": 7, "completed": 0, "inProgress": 0, "notStarted": 7, "pocPct": null },
+    { "name": "Centralized APIM", "featuresCount": 7, "completed": 0, "inProgress": 0, "notStarted": 7, "pocPct": null }
+  ],
+  "epicImplementationTotals": {
+    "featuresCount": 224,
+    "completed": 25,
+    "inProgress": 12,
+    "notStarted": 187,
+    "pocPct": 50.45
+  }
+}

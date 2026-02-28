@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "source": "Microsoft Entra ID",
+    "dateRange": { "from": "2026-02-01", "to": "2026-02-28" },
+    "lastRefresh": "2026-02-21T14:30:00Z"
+  },
+  "tabs": ["users", "groups", "apps", "devices", "pam"],
+  "users": {
+    "kpis": [
+      { "label": "Total Users", "value": 1250, "badge": "Info", "badgeVariant": "info", "subtitle": "All users in Entra ID", "records": 10 },
+      { "label": "Member Users", "value": 1100, "badge": "Good", "badgeVariant": "good", "subtitle": "Internal company users", "records": 8 },
+      { "label": "Guest Users", "value": 150, "badge": "Warning", "badgeVariant": "warn", "subtitle": "External guest users", "records": 2 },
+      { "label": "Inactive Members", "sublabel": ">90d", "value": 89, "badge": "Critical", "badgeVariant": "crit", "subtitle": "Member users inactive >90 days", "records": 1, "colorOverride": "#b8223f" },
+      { "label": "Inactive Guests", "sublabel": ">90d", "value": 67, "badge": "Warning", "badgeVariant": "warn", "subtitle": "Guest users inactive >90 days", "records": 1, "colorOverride": "#c97b30" },
+      { "label": "Disabled Users", "value": 34, "badge": "Critical", "badgeVariant": "crit", "subtitle": "Disabled accounts", "records": 1, "colorOverride": "#b8223f" }
+    ],
+    "staleAccountBreakdown": [
+      { "period": "30-60 days", "members": 140, "guests": 80 },
+      { "period": "60-90 days", "members": 80, "guests": 50 },
+      { "period": "90-180 days", "members": 40, "guests": 25 },
+      { "period": ">180 days", "members": 15, "guests": 8 }
+    ],
+    "guestUsersByDomain": [
+      { "domain": "partner.com", "total": 45, "active": 30 },
+      { "domain": "vendor.com", "total": 35, "active": 20 },
+      { "domain": "consultant.com", "total": 20, "active": 10 },
+      { "domain": "contractor.com", "total": 18, "active": 8 },
+      { "domain": "other", "total": 22, "active": 7 }
+    ],
+    "userDirectory": [
+      { "firstName": "John", "lastName": "Smith", "email": "john.smith@company.com", "department": "IT", "designation": "IT Manager", "type": "member", "status": "active", "licenses": "Microsoft 365 E5, Power BI Pro" },
+      { "firstName": "Sarah", "lastName": "Johnson", "email": "sarah.johnson@company.com", "department": "Security", "designation": "Security Analyst", "type": "member", "status": "active", "licenses": "Microsoft 365 E5" },
+      { "firstName": "Michael", "lastName": "Chen", "email": "michael.chen@company.com", "department": "Engineering", "designation": "Developer", "type": "member", "status": "active", "licenses": "Microsoft 365 E3, Visual Studio Enterprise" },
+      { "firstName": "Emily", "lastName": "Davis", "email": "emily.davis@company.com", "department": "HR", "designation": "HR Manager", "type": "member", "status": "inactive", "licenses": "Microsoft 365 E3" },
+      { "firstName": "Ahmed", "lastName": "Al-Rashid", "email": "ahmed.alrashid@company.com", "department": "Finance", "designation": "Finance Analyst", "type": "member", "status": "active", "licenses": "Microsoft 365 E3" }
+    ],
+    "totalEntries": 1250
+  },
+  "groups": {
+    "kpis": [
+      { "label": "Total Groups", "value": 156, "badge": "Info", "badgeVariant": "info", "subtitle": "All groups in Entra ID", "records": 8 },
+      { "label": "M365 Groups", "value": 78, "badge": "Good", "badgeVariant": "good", "subtitle": "Microsoft 365 groups", "records": 3 },
+      { "label": "Security Groups", "value": 45, "badge": "Good", "badgeVariant": "good", "subtitle": "Security groups", "records": 3 },
+      { "label": "Dynamic Groups", "value": 34, "badge": "Info", "badgeVariant": "info", "subtitle": "Dynamic membership groups", "records": 2 },
+      { "label": "Orphaned Groups", "value": 12, "badge": "Critical", "badgeVariant": "crit", "subtitle": "Groups with no members", "records": 2, "colorOverride": "#b8223f" }
+    ],
+    "groupTypeDistribution": [
+      { "type": "M365 Groups", "percentage": 50, "color": "#5a0f22" },
+      { "type": "Security Groups", "percentage": 29, "color": "#8b1837" },
+      { "type": "Distribution", "percentage": 15, "color": "#051b44" },
+      { "type": "Mail-enabled", "percentage": 6, "color": "#8899bb" }
+    ],
+    "groupDirectory": [
+      { "name": "IT-Admins", "type": "Security", "membership": "Assigned", "members": 12, "hasOwner": true, "orphan": false },
+      { "name": "All-Company", "type": "M365", "membership": "Dynamic", "members": 1250, "hasOwner": true, "orphan": false },
+      { "name": "Sales-Team", "type": "M365", "membership": "Assigned", "members": 85, "hasOwner": true, "orphan": false },
+      { "name": "Project-Alpha", "type": "Security", "membership": "Assigned", "members": 0, "hasOwner": false, "orphan": true },
+      { "name": "HR-Confidential", "type": "Mail-sec", "membership": "Assigned", "members": 8, "hasOwner": true, "orphan": false }
+    ],
+    "totalEntries": 8
+  },
+  "apps": {
+    "kpis": [
+      { "label": "Total Apps", "value": 45, "badge": "Info", "badgeVariant": "info", "subtitle": "All app registrations", "records": 6 },
+      { "label": "Expiring", "sublabel": "<14 days", "value": 23, "badge": "Critical", "badgeVariant": "crit", "subtitle": "Apps with credentials expiring soon", "records": 5, "colorOverride": "#b8223f" },
+      { "label": "Expiring", "sublabel": "14-30 days", "value": 18, "badge": "Warning", "badgeVariant": "warn", "subtitle": "Apps expiring in 14-30 days", "colorOverride": "#c97b30" },
+      { "label": "High Privilege", "sublabel": "Apps", "value": 8, "badge": "Warning", "badgeVariant": "warn", "subtitle": "Apps with high privilege permissions", "records": 3, "colorOverride": "#c97b30" },
+      { "label": "Orphaned Apps", "value": 6, "badge": "Critical", "badgeVariant": "crit", "subtitle": "Apps with no owner", "records": 2, "colorOverride": "#b8223f" },
+      { "label": "Admin Consent Apps", "value": 32, "badge": "Good", "badgeVariant": "good", "subtitle": "Apps with admin consent granted", "records": 4 }
+    ],
+    "credentialExpiryDistribution": [
+      { "period": "<14 days", "count": 23 },
+      { "period": "14-30 days", "count": 18 },
+      { "period": "30-60 days", "count": 5 },
+      { "period": ">60 days", "count": 143 }
+    ],
+    "appRegistry": [
+      { "name": "Salesforce Integration", "owner": "John Smith", "expiringDays": 5, "highPrivilege": true, "adminConsent": true, "orphan": false },
+      { "name": "ServiceNow Connector", "owner": "Sarah Johnson", "expiringDays": 12, "highPrivilege": true, "adminConsent": true, "orphan": false },
+      { "name": "Legacy App", "owner": null, "expiringDays": 0, "highPrivilege": false, "adminConsent": false, "orphan": true },
+      { "name": "Power BI Gateway", "owner": "Michael Chen", "expiringDays": 45, "highPrivilege": false, "adminConsent": true, "orphan": false },
+      { "name": "Custom Reporting", "owner": "James Martinez", "expiringDays": 8, "highPrivilege": true, "adminConsent": true, "orphan": false }
+    ],
+    "totalEntries": 6
+  },
+  "devices": {
+    "kpis": [
+      { "label": "Total Devices", "value": 2345, "badge": "Info", "badgeVariant": "info", "subtitle": "All registered devices", "records": 6 },
+      { "label": "Compliant Devices", "value": 1987, "badge": "Good", "badgeVariant": "good", "subtitle": "Devices meeting compliance policies", "records": 4, "colorOverride": "#1a9e8a" },
+      { "label": "Non-Compliant", "value": 89, "badge": "Critical", "badgeVariant": "crit", "subtitle": "Devices not meeting compliance", "records": 2, "colorOverride": "#b8223f" },
+      { "label": "Entra Joined", "value": 1456, "badge": "Good", "badgeVariant": "good", "subtitle": "Entra ID joined devices", "colorOverride": "#1a9e8a" },
+      { "label": "Managed (Intune)", "value": 1987, "badge": "Good", "badgeVariant": "good", "subtitle": "Intune managed devices", "records": 5, "colorOverride": "#1a9e8a" },
+      { "label": "Stale Devices", "value": 156, "badge": "Warning", "badgeVariant": "warn", "subtitle": "No check-in >90 days", "records": 2, "colorOverride": "#c97b30" }
+    ],
+    "deviceDistributionByOS": [
+      { "os": "Windows", "percentage": 62, "color": "#5a0f22" },
+      { "os": "iOS", "percentage": 22, "color": "#8b1837" },
+      { "os": "Android", "percentage": 10, "color": "#051b44" },
+      { "os": "macOS", "percentage": 6, "color": "#8899bb" }
+    ],
+    "deviceRegistry": [
+      { "name": "LAPTOP-001", "os": "Windows", "compliance": "Compliant", "trustType": "Entra Joined", "managed": true, "lastCheckIn": "2024-01-15" },
+      { "name": "MAC-002", "os": "macOS", "compliance": "Compliant", "trustType": "Registered", "managed": true, "lastCheckIn": "2024-01-14" },
+      { "name": "IPHONE-003", "os": "iOS", "compliance": "Compliant", "trustType": "Registered", "managed": true, "lastCheckIn": "2024-01-15" },
+      { "name": "ANDROID-004", "os": "Android", "compliance": "Non-compliant", "trustType": "Registered", "managed": false, "lastCheckIn": "2023-10-01" },
+      { "name": "LAPTOP-005", "os": "Windows", "compliance": "Non-compliant", "trustType": "Hybrid Joined", "managed": true, "lastCheckIn": "2023-11-20" }
+    ],
+    "totalEntries": 6
+  },
+  "pam": {
+    "kpis": [
+      { "label": "Privileged Users", "value": 45, "badge": "Info", "badgeVariant": "info", "subtitle": "Users with privileged roles", "records": 5, "colorOverride": "#b8223f", "highlighted": true },
+      { "label": "Global Admins", "value": 14, "badge": "Critical", "badgeVariant": "crit", "subtitle": "Global Administrator assignments", "records": 2, "colorOverride": "#b8223f", "target": "<=5" },
+      { "label": "PIM Eligible", "value": 31, "badge": "Good", "badgeVariant": "good", "subtitle": "PIM-eligible role assignments", "records": 3, "colorOverride": "#1a9e8a" },
+      { "label": "Permanent Assignments", "value": 14, "badge": "Warning", "badgeVariant": "warn", "subtitle": "Permanent role assignments", "records": 2, "colorOverride": "#c97b30" },
+      { "label": "Break-glass Accounts", "value": 2, "badge": "Good", "badgeVariant": "good", "subtitle": "Emergency access accounts", "colorOverride": "#1a9e8a" },
+      { "label": "Service Principals", "value": 23, "badge": "Info", "badgeVariant": "info", "subtitle": "Roles assigned to service principals" }
+    ],
+    "roleAssignment": [
+      { "role": "Global Admin", "permanent": 12, "pimEligible": 8 },
+      { "role": "Security Admin", "permanent": 5, "pimEligible": 14 },
+      { "role": "Change Admin", "permanent": 3, "pimEligible": 6 },
+      { "role": "User Admin", "permanent": 2, "pimEligible": 5 }
+    ],
+    "recentPIMActivations": [
+      { "user": "John Smith", "role": "Global Admin", "activated": "2024-01-15 09:30", "duration": "4 hours", "reason": "Emergency access" },
+      { "user": "Sarah Johnson", "role": "Security Admin", "activated": "2024-01-14 14:15", "duration": "2 hours", "reason": "Security incident" },
+      { "user": "James Martinez", "role": "Global Admin", "activated": "2024-01-14 10:00", "duration": "8 hours", "reason": "Planned maintenance" },
+      { "user": "Robert Wilson", "role": "User Admin", "activated": "2024-01-13 16:45", "duration": "1 hour", "reason": "User onboarding" },
+      { "user": "Michael Chen", "role": "App Admin", "activated": "2024-01-12 11:30", "duration": "3 hours", "reason": "App deployment" }
+    ],
+    "privilegedUsers": [
+      { "name": "John Smith", "email": "john.smith@company.com", "role": "Global Administrator", "assignment": "Permanent", "licenses": "Microsoft 365 E5, Azure AD P2", "lastActivated": null },
+      { "name": "Sarah Johnson", "email": "sarah.johnson@company.com", "role": "Security Administrator", "assignment": "PIM-Eligible", "licenses": "Microsoft 365 E5, Azure AD P2", "lastActivated": "2024-01-10" },
+      { "name": "James Martinez", "email": "james.martinez@company.com", "role": "Global Administrator", "assignment": "PIM-Eligible", "licenses": "Microsoft 365 E5, Azure AD P2", "lastActivated": "2024-01-14" }
+    ]
+  }
+}

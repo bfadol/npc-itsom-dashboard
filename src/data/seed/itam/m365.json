@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "source": "Microsoft 365 Admin Center",
+    "dateRange": { "from": "2026-02-01", "to": "2026-02-28" },
+    "lastRefresh": "2026-02-21T14:30:00Z"
+  },
+  "kpis": {
+    "totalLicenses": {
+      "value": 3800,
+      "icon": "fa-solid fa-id-card",
+      "colorVariant": "blue",
+      "subtitle": "Assigned + Available"
+    },
+    "assigned": {
+      "value": 3480,
+      "icon": "fa-solid fa-circle-check",
+      "colorVariant": "teal",
+      "trend": { "direction": "up", "delta": "91.6% Utilization", "label": "", "isGood": true }
+    },
+    "available": {
+      "value": 320,
+      "colorVariant": "gold",
+      "subtitle": "8.4% Available"
+    },
+    "expiring30d": {
+      "value": 12,
+      "icon": "fa-solid fa-triangle-exclamation",
+      "colorVariant": "red",
+      "subtitle": "Action required"
+    }
+  },
+  "licenseDistributionBySKU": [
+    { "sku": "M365 E3", "count": 2356, "percentage": 62, "color": "#0e3a82" },
+    { "sku": "M365 E5", "count": 836, "percentage": 22, "color": "#8e44ad" },
+    { "sku": "Power BI Pro", "count": 380, "percentage": 10, "color": "#c97b30" },
+    { "sku": "Teams Rooms", "count": 228, "percentage": 6, "color": "#1a9e8a" }
+  ],
+  "usageByDepartment": [
+    { "department": "Planning", "count": 820, "percentage": 55, "color": "#0e3a82" },
+    { "department": "IT", "count": 520, "percentage": 35, "color": "#c97b30" },
+    { "department": "Finance", "count": 420, "percentage": 28, "color": "#8e44ad" },
+    { "department": "HR", "count": 330, "percentage": 22, "color": "#1a9e8a" },
+    { "department": "Operations", "count": 270, "percentage": 18, "color": "#b8966a" }
+  ]
+}

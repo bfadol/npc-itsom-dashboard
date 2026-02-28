@@ -1,0 +1,246 @@
+/* ── Risk Page specific styles ── */
+
+/* Filter bar */
+.filterBar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+  padding: 12px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  backdrop-filter: blur(20px);
+}
+
+.filterSelect {
+  padding: 6px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  background: rgba(0, 40, 100, 0.12);
+  color: var(--text-primary);
+  font-size: 11px;
+  font-family: var(--font-brand);
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.filterSelect:focus {
+  outline: none;
+  border-color: var(--brand-gold);
+}
+
+.filterLabel {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Risk Matrix */
+.riskMatrix {
+  position: relative;
+}
+
+.riskMatrixGrid {
+  display: grid;
+  grid-template-columns: 70px repeat(4, 1fr);
+  gap: 3px;
+}
+
+.rmHeader {
+  font-size: 8px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 4px 2px;
+  font-weight: 600;
+}
+
+.rmCorner {
+  font-size: 8px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 4px 2px;
+}
+
+.rmRowLabel {
+  font-size: 8px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 6px;
+  font-weight: 600;
+}
+
+.rmCell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  border-radius: 4px;
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  transition: transform 0.2s;
+}
+
+.rmCell:hover {
+  transform: scale(1.05);
+}
+
+.rmGreen  { background: rgba(20, 202, 116, 0.35); }
+.rmYellow { background: rgba(201, 123, 48, 0.45); }
+.rmOrange { background: rgba(201, 123, 48, 0.7); }
+.rmRed    { background: rgba(184, 34, 63, 0.75); }
+
+.rmAxisLabel {
+  font-size: 9px;
+  color: var(--text-muted);
+  text-align: center;
+  margin-top: 6px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.rmYAxisLabel {
+  position: absolute;
+  left: -4px;
+  top: 50%;
+  transform: rotate(-90deg) translateX(-50%);
+  font-size: 9px;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transform-origin: left center;
+}
+
+/* Multi-bar chart */
+.multiBarList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.multiBarItem {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-card);
+}
+
+.multiBarItem:last-child {
+  border-bottom: none;
+}
+
+.multiBarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+
+.multiBarLabel {
+  font-size: 11px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.multiBarVal {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.riskBarTrack {
+  height: 6px;
+  background: rgba(0, 40, 100, 0.15);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.riskBarFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.6s ease;
+}
+
+.multiBarSub {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.subLabel {
+  font-size: 8px;
+  color: var(--text-muted);
+  min-width: 45px;
+}
+
+.subBarWrap {
+  flex: 1;
+}
+
+.subVal {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+  min-width: 20px;
+  text-align: right;
+}
+
+/* Legend for multi-bar */
+.multiBarLegend {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.legendDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* Donut stack */
+.donutStack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Right column fills height */
+.rightCol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Two-col main */
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: var(--gap-lg);
+  margin-bottom: var(--gap-md);
+}
+
+@media (max-width: 1100px) {
+  .mainGrid {
+    grid-template-columns: 1fr;
+  }
+}

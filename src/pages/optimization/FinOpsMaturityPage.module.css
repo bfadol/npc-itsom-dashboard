@@ -1,0 +1,122 @@
+/* ── FinOps Maturity Page styles ── */
+
+/* Stage tracker (Crawl → Walk → Run) */
+.stageTracker {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 20px;
+  padding: 14px 0;
+}
+
+.stageNode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  z-index: 1;
+}
+
+.stageIcon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  border: 2px solid var(--border-card);
+  background: rgba(0, 40, 100, 0.12);
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+}
+
+.stageIcon.current {
+  background: linear-gradient(135deg, #8b1837, #b8223f);
+  border-color: #b8223f;
+  color: #fff;
+  box-shadow: 0 0 12px rgba(184, 34, 63, 0.35);
+}
+
+.stageIcon.target {
+  background: linear-gradient(135deg, #0e3a82, #2471a3);
+  border-color: #2471a3;
+  color: #fff;
+}
+
+.stageIcon.future {
+  opacity: 0.5;
+}
+
+.stageName {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stageLabel {
+  font-size: 8px;
+  color: var(--text-muted);
+}
+
+.stageConnector {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(162, 149, 116, 0.3), rgba(162, 149, 116, 0.15));
+  min-width: 40px;
+}
+
+/* Domain progress list */
+.domainList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Score header in capability cards */
+.capHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.capTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.capTitle i {
+  font-size: 12px;
+}
+
+.capScore {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.capScore span {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.capBars {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Overall score highlight */
+.overallCard {
+  background: linear-gradient(165deg, rgba(184,34,63,0.12) 0%, rgba(0,103,193,0.02) 50%, rgba(184,34,63,0.08) 100%);
+}

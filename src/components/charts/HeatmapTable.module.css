@@ -1,0 +1,46 @@
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-xs);
+}
+
+.tbl th {
+  background: rgba(5, 27, 68, 0.15);
+  color: var(--text-muted);
+  padding: 5px 4px;
+  text-align: center;
+  font-size: 9px;
+  font-weight: var(--fw-semi);
+  letter-spacing: 0.5px;
+  border: 1px solid rgba(14, 58, 130, 0.08);
+}
+
+.dateCol {
+  text-align: left !important;
+  padding-left: 8px !important;
+  min-width: 100px;
+}
+
+.tbl td {
+  padding: 4px;
+  text-align: center;
+  border: 1px solid rgba(14, 58, 130, 0.06);
+  font-size: 9px;
+  color: var(--text-secondary);
+  min-width: 22px;
+}
+
+.dateCell {
+  text-align: left !important;
+  padding-left: 8px !important;
+  color: var(--text-secondary);
+  font-size: var(--fs-xs);
+  white-space: nowrap;
+}
+
+.h0 { background: var(--heatmap-0-bg); }
+.h1 { background: var(--heatmap-1-bg); color: var(--heatmap-1-text); }
+.h2 { background: var(--heatmap-2-bg); color: var(--heatmap-2-text); }
+.h3 { background: var(--heatmap-3-bg); color: var(--heatmap-3-text); font-weight: var(--fw-bold); }
+.h4 { background: var(--heatmap-4-bg); color: var(--heatmap-4-text); font-weight: var(--fw-bold); }
+.h5 { background: var(--heatmap-5-bg); color: var(--heatmap-5-text); font-weight: var(--fw-bold); }

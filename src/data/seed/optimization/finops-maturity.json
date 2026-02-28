@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "source": "FinOps Maturity Assessment",
+    "dateRange": { "from": "2026-01-01", "to": "2026-03-31" },
+    "lastRefresh": "2026-02-21T14:30:00Z",
+    "platform": "Azure",
+    "assessmentPeriod": "Q1 2026"
+  },
+  "overallMaturityScore": {
+    "domains": [
+      { "name": "Inform", "score": 3.2, "max": 5, "percentage": 64, "stage": "Crawl → Walk", "icon": "fa-solid fa-magnifying-glass", "colorVariant": "teal" },
+      { "name": "Optimize", "score": 2.7, "max": 5, "percentage": 54, "stage": "Crawl Stage", "icon": "fa-solid fa-gear", "colorVariant": "orange" },
+      { "name": "Operate", "score": 3.5, "max": 5, "percentage": 70, "stage": "Walk Stage", "icon": "fa-solid fa-landmark", "colorVariant": "blue" },
+      { "name": "Govern", "score": 2.9, "max": 5, "percentage": 58, "stage": "Crawl → Walk", "icon": "fa-solid fa-shield-halved", "colorVariant": "gold" },
+      { "name": "Overall Score", "score": 3.1, "max": 5, "percentage": 62, "stage": "Crawl → Walk", "icon": "fa-solid fa-bullseye", "colorVariant": "red" }
+    ],
+    "radarData": {
+      "inform": 3.2,
+      "optimize": 2.7,
+      "operate": 3.5,
+      "govern": 2.9,
+      "overall": 3.1
+    }
+  },
+  "maturityStageJourney": {
+    "currentStage": "Crawl",
+    "stages": [
+      { "name": "Crawl", "icon": "fa-solid fa-bug", "status": "current", "label": "Current Stage" },
+      { "name": "Walk", "icon": "fa-solid fa-person-walking", "status": "target", "label": "Target Q3 2026" },
+      { "name": "Run", "icon": "fa-solid fa-person-running", "status": "future", "label": "Target Q1 2027" }
+    ]
+  },
+  "capabilityAssessment": {
+    "inform": {
+      "score": 3.2,
+      "max": 5,
+      "icon": "fa-solid fa-magnifying-glass",
+      "colorVariant": "teal",
+      "capabilities": [
+        { "name": "Cost Allocation & Tagging", "score": 3.0, "percentage": 60 },
+        { "name": "Reporting & Dashboards", "score": 3.5, "percentage": 70 },
+        { "name": "Anomaly Detection", "score": 3.0, "percentage": 60 },
+        { "name": "Forecasting", "score": 3.3, "percentage": 66 }
+      ]
+    },
+    "optimize": {
+      "score": 2.7,
+      "max": 5,
+      "icon": "fa-solid fa-gear",
+      "colorVariant": "orange",
+      "capabilities": [
+        { "name": "Reserved Instances", "score": 2.5, "percentage": 50 },
+        { "name": "Right-sizing", "score": 2.8, "percentage": 56 },
+        { "name": "Orphan Resource Cleanup", "score": 2.7, "percentage": 54 },
+        { "name": "Savings Plans", "score": 2.6, "percentage": 52 }
+      ]
+    },
+    "operate": {
+      "score": 3.5,
+      "max": 5,
+      "icon": "fa-solid fa-landmark",
+      "colorVariant": "blue",
+      "capabilities": [
+        { "name": "Budget Management", "score": 3.8, "percentage": 76 },
+        { "name": "Chargeback / Showback", "score": 3.0, "percentage": 60 },
+        { "name": "Cloud Policy Enforcement", "score": 3.7, "percentage": 74 },
+        { "name": "Team Enablement", "score": 3.5, "percentage": 70 }
+      ]
+    },
+    "govern": {
+      "score": 2.9,
+      "max": 5,
+      "icon": "fa-solid fa-shield-halved",
+      "colorVariant": "gold",
+      "capabilities": [
+        { "name": "FinOps Policy & Standards", "score": 3.0, "percentage": 60 },
+        { "name": "Cloud Financial Risk", "score": 2.7, "percentage": 54 },
+        { "name": "Compliance & Audit Trail", "score": 3.0, "percentage": 60 },
+        { "name": "Executive Reporting", "score": 2.9, "percentage": 58 }
+      ]
+    }
+  },
+  "improvementRoadmap": {
+    "target": "Walk Stage by Q3 2026",
+    "initiatives": [
+      { "name": "Implement Reserved Instance Strategy", "domain": "Optimize", "priority": "Critical", "current": 2.5, "target": 4.0, "status": "In Progress", "timeline": "Q2 2026" },
+      { "name": "Enhance Cost Tagging Standards", "domain": "Inform", "priority": "High", "current": 3.0, "target": 4.0, "status": "Planned", "timeline": "Q2 2026" },
+      { "name": "Automate Orphan Resource Detection", "domain": "Optimize", "priority": "Critical", "current": 2.7, "target": 4.0, "status": "In Progress", "timeline": "Q2 2026" },
+      { "name": "Establish FinOps Governance Policy", "domain": "Govern", "priority": "High", "current": 3.0, "target": 4.0, "status": "Planned", "timeline": "Q3 2026" },
+      { "name": "Implement Chargeback Model", "domain": "Operate", "priority": "Medium", "current": 3.0, "target": 4.0, "status": "Planned", "timeline": "Q3 2026" },
+      { "name": "Real-time Anomaly Alerting", "domain": "Inform", "priority": "Medium", "current": 3.0, "target": 4.0, "status": "On Track", "timeline": "Q3 2026" }
+    ]
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "metadata": {
+    "source": "Ru'ya – ITSM Problem Mgmt. Module",
+    "dateRange": { "from": "2026-02-01", "to": "2026-02-28" },
+    "lastRefresh": "2026-02-21T14:30:00Z",
+    "frequency": "Monthly"
+  },
+  "kpis": {
+    "totalProblems": {
+      "value": 40,
+      "icon": "fa-solid fa-clipboard-list",
+      "colorVariant": "blue",
+      "subtitle": "All time in period"
+    },
+    "knownErrors": {
+      "value": 27,
+      "icon": "fa-solid fa-layer-group",
+      "colorVariant": "gold",
+      "subtitle": "In KEDB"
+    },
+    "knownErrorRate": {
+      "value": 67,
+      "unit": "%",
+      "icon": "fa-solid fa-magnifying-glass",
+      "colorVariant": "blue",
+      "subtitle": "Known errors / total x 100"
+    },
+    "workaroundTime": {
+      "value": 8.4,
+      "unit": "hrs",
+      "icon": "fa-solid fa-wrench",
+      "colorVariant": "orange",
+      "subtitle": "Avg. time to workaround"
+    },
+    "majorReviewRate": {
+      "value": 83,
+      "unit": "%",
+      "icon": "fa-solid fa-clipboard-list",
+      "colorVariant": "red",
+      "subtitle": "Reviews completed / major x 100"
+    }
+  },
+  "statusOverview": {
+    "totalActive": 16,
+    "open": 8,
+    "underInvestigation": 5,
+    "knownError": 3,
+    "resolved": 24
+  },
+  "problemTrend": [
+    { "month": "Sep", "value": 22 },
+    { "month": "Oct", "value": 20 },
+    { "month": "Nov", "value": 19 },
+    { "month": "Dec", "value": 18 },
+    { "month": "Jan", "value": 17 },
+    { "month": "Feb", "value": 16 }
+  ],
+  "knownErrorIdentification": {
+    "percentage": 67,
+    "knownErrors": 3,
+    "problemsTotal": 16,
+    "formula": "(Known Errors Created / Total Problems Identified) x 100 | Monthly"
+  },
+  "workaroundTrend": [
+    { "month": "Sep", "value": 11.2 },
+    { "month": "Oct", "value": 9.5 },
+    { "month": "Nov", "value": 10.0 },
+    { "month": "Dec", "value": 8.8 },
+    { "month": "Jan", "value": 9.2 },
+    { "month": "Feb", "value": 8.4 }
+  ],
+  "majorReviewCompletion": {
+    "percentage": 83,
+    "completed": 5,
+    "required": 6,
+    "frequency": "Monthly"
+  },
+  "rootCauseCategories": [
+    { "category": "Infrastructure", "count": 7, "percentage": 44 },
+    { "category": "Application", "count": 5, "percentage": 31 },
+    { "category": "Network", "count": 3, "percentage": 19 },
+    { "category": "Process / Human", "count": 1, "percentage": 7 }
+  ],
+  "ageBreakdown": [
+    { "range": "0-7 days", "count": 3, "color": "blue" },
+    { "range": "8-30 days", "count": 3, "color": "orange" },
+    { "range": ">30 days", "count": 2, "color": "red" }
+  ],
+  "activeProblemRecords": [
+    { "problemId": "PRB-0041", "category": "Infrastructure", "status": "Open", "age": "38d", "knownError": true, "sla": "Breached" },
+    { "problemId": "PRB-0039", "category": "Application", "status": "Investigating", "age": "22d", "knownError": false, "sla": "OK" },
+    { "problemId": "PRB-0037", "category": "Network", "status": "Known Error", "age": "15d", "knownError": true, "sla": "OK" },
+    { "problemId": "PRB-0035", "category": "Infrastructure", "status": "Open", "age": "41d", "knownError": false, "sla": "Breached" },
+    { "problemId": "PRB-0033", "category": "Application", "status": "Investigating", "age": "9d", "knownError": false, "sla": "OK" },
+    { "problemId": "PRB-0031", "category": "Process", "status": "Known Error", "age": "5d", "knownError": true, "sla": "OK" }
+  ]
+}

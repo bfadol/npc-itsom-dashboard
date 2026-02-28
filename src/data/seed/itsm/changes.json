@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "source": "Ru'ya – ITSM Change Mgmt. Module",
+    "dateRange": { "from": "2026-02-01", "to": "2026-02-28" },
+    "lastRefresh": "2026-02-21T14:30:00Z",
+    "frequency": "Monthly"
+  },
+  "kpis": {
+    "changeSuccessRate": {
+      "value": 91,
+      "unit": "%",
+      "icon": "fa-solid fa-circle-check",
+      "colorVariant": "teal",
+      "progressBar": { "value": 91, "gradient": "linear-gradient(90deg,#1abc9c,#27e6b6)" },
+      "trend": { "direction": "up", "delta": 3, "label": "vs Last Month", "isGood": true },
+      "subtitle": "Successful / Total implemented x 100"
+    },
+    "failedChangeRate": {
+      "value": 4.2,
+      "unit": "%",
+      "icon": "fa-solid fa-xmark",
+      "colorVariant": "red",
+      "progressBar": { "value": 4.2, "gradient": "linear-gradient(90deg,#8b1a1a,#e74c3c)" },
+      "trend": { "direction": "down", "delta": -1.1, "label": "vs Last Month", "isGood": true },
+      "subtitle": "Failed / Total implemented x 100"
+    },
+    "emergencyChangeRate": {
+      "value": 8.7,
+      "unit": "%",
+      "icon": "fa-solid fa-bolt",
+      "colorVariant": "orange",
+      "progressBar": { "value": 8.7, "gradient": "linear-gradient(90deg,#7a3c0a,#e67e22)" },
+      "trend": { "direction": "up", "delta": 2.1, "label": "vs Last Month", "isGood": false },
+      "subtitle": "Emergency / Total changes raised x 100"
+    },
+    "changeInducedIncidentRate": {
+      "value": 6.3,
+      "unit": "%",
+      "icon": "fa-solid fa-triangle-exclamation",
+      "colorVariant": "red",
+      "progressBar": { "value": 6.3, "gradient": "linear-gradient(90deg,#8b1a1a,#e74c3c)" },
+      "trend": { "direction": "down", "delta": -0.8, "label": "vs Last Month", "isGood": true },
+      "subtitle": "Change-caused incidents / Total incidents x 100"
+    },
+    "pirCompletionRate": {
+      "value": 79,
+      "unit": "%",
+      "icon": "fa-solid fa-pen-to-square",
+      "colorVariant": "gold",
+      "progressBar": { "value": 79, "gradient": "linear-gradient(90deg,#8a6520,#b8966a)" },
+      "subtitle": "PIR completed / required PIR x 100"
+    },
+    "highRiskChangePercentage": {
+      "value": 12,
+      "unit": "%",
+      "icon": "fa-solid fa-bullseye",
+      "colorVariant": "orange",
+      "progressBar": { "value": 12, "gradient": "linear-gradient(90deg,#7a3c0a,#e67e22)" },
+      "subtitle": "High-risk / Total implemented x 100"
+    },
+    "unauthorizedChangeRate": {
+      "value": 2,
+      "unit": "%",
+      "icon": "fa-solid fa-ban",
+      "colorVariant": "red",
+      "progressBar": { "value": 2, "gradient": "linear-gradient(90deg,#8b1a1a,#e74c3c)" },
+      "trend": { "direction": "down", "delta": -1, "label": "vs Last Month", "isGood": true }
+    },
+    "deferredChangePercentage": {
+      "value": 15,
+      "unit": "%",
+      "icon": "fa-solid fa-hourglass-half",
+      "colorVariant": "blue",
+      "progressBar": { "value": 15, "gradient": "linear-gradient(90deg,#1a3a6c,#2471a3)" },
+      "trend": { "direction": "up", "delta": 4, "label": "vs Last Month", "isGood": false }
+    }
+  },
+  "changeTypeDistribution": {
+    "total": 142,
+    "types": [
+      { "type": "Standard", "count": 89, "percentage": 63, "color": "#1a9e8a" },
+      { "type": "Normal", "count": 41, "percentage": 29, "color": "#2471a3" },
+      { "type": "Emergency", "count": 12, "percentage": 8, "color": "#c97b30" }
+    ]
+  },
+  "successFailTrend": {
+    "success": [
+      { "month": "Sep", "value": 85 },
+      { "month": "Oct", "value": 88 },
+      { "month": "Nov", "value": 87 },
+      { "month": "Dec", "value": 90 },
+      { "month": "Jan", "value": 92 },
+      { "month": "Feb", "value": 91 }
+    ],
+    "failed": [
+      { "month": "Sep", "value": 7 },
+      { "month": "Oct", "value": 6 },
+      { "month": "Nov", "value": 6.5 },
+      { "month": "Dec", "value": 5 },
+      { "month": "Jan", "value": 6 },
+      { "month": "Feb", "value": 4.2 }
+    ]
+  },
+  "riskLevelDistribution": [
+    { "level": "Low Risk", "count": 71, "percentage": 50, "color": "#1a9e8a" },
+    { "level": "Medium Risk", "count": 54, "percentage": 38, "color": "#c97b30" },
+    { "level": "High Risk", "count": 17, "percentage": 12, "color": "#b8223f" }
+  ],
+  "pendingApproval": 34,
+  "deferredReadiness": 21,
+  "kpiSummaryTable": [
+    { "num": 1, "name": "Change Success Rate", "value": "91%", "unit": "%age", "frequency": "Monthly", "status": "Good" },
+    { "num": 2, "name": "Failed Change Rate", "value": "4.2%", "unit": "%age", "frequency": "Monthly", "status": "Good" },
+    { "num": 3, "name": "Emergency Change Rate", "value": "8.7%", "unit": "%age", "frequency": "Monthly", "status": "Monitor" },
+    { "num": 4, "name": "Change-Induced Incident Rate", "value": "6.3%", "unit": "%age", "frequency": "Monthly", "status": "Monitor" },
+    { "num": 5, "name": "PIR Completion Rate", "value": "79%", "unit": "%age", "frequency": "Monthly", "status": "Monitor" },
+    { "num": 6, "name": "High-Risk Change Percentage", "value": "12%", "unit": "%age", "frequency": "Monthly", "status": "Monitor" },
+    { "num": 7, "name": "Unauthorized Change Rate", "value": "2%", "unit": "%age", "frequency": "Monthly", "status": "Good" },
+    { "num": 8, "name": "Deferred Change Percentage", "value": "15%", "unit": "%age", "frequency": "Monthly", "status": "Monitor" }
+  ],
+  "recentChangeRequests": [
+    { "crId": "CHG-1142", "type": "Standard", "risk": "Low", "status": "Closed", "result": "Success" },
+    { "crId": "CHG-1141", "type": "Emergency", "risk": "High", "status": "Closed", "result": "Failed" },
+    { "crId": "CHG-1140", "type": "Normal", "risk": "Medium", "status": "Approved", "result": "Pending" },
+    { "crId": "CHG-1139", "type": "Standard", "risk": "Low", "status": "Closed", "result": "Success" },
+    { "crId": "CHG-1138", "type": "Normal", "risk": "High", "status": "Deferred", "result": "Deferred" },
+    { "crId": "CHG-1137", "type": "Standard", "risk": "Low", "status": "Closed", "result": "Success" },
+    { "crId": "CHG-1136", "type": "Emergency", "risk": "High", "status": "Closed", "result": "Success" }
+  ]
+}

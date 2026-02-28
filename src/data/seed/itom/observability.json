@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "source": "Infrastructure Monitoring – Observability Platform",
+    "dateRange": { "from": "2026-02-12", "to": "2026-02-12" },
+    "lastRefresh": "2026-02-21T14:30:00Z"
+  },
+  "deviceStatus": {
+    "totalDevices": 772,
+    "categories": [
+      { "name": "URL Status", "icon": "fa-solid fa-globe", "total": 38, "available": 38, "unavailable": 0 },
+      { "name": "Network Devices", "icon": "fa-solid fa-plug", "total": 59, "available": 59, "unavailable": 0 },
+      { "name": "Storage & Backup", "icon": "fa-solid fa-hard-drive", "total": 4, "available": 4, "unavailable": 0 },
+      { "name": "Servers Status", "icon": "fa-solid fa-network-wired", "total": 671, "available": 631, "unavailable": 40 }
+    ]
+  },
+  "alarmMonitoring": {
+    "activeCritical": {
+      "value": 10,
+      "icon": "fa-solid fa-triangle-exclamation",
+      "trend": { "direction": "down", "delta": -219, "label": "vs Previous Day", "isGood": true },
+      "closedEvents": 181
+    },
+    "activeMajor": {
+      "value": 194,
+      "icon": "fa-solid fa-triangle-exclamation",
+      "trend": { "direction": "down", "delta": -82, "label": "vs Previous Day", "isGood": true },
+      "closedEvents": 3292
+    },
+    "activeMinor": {
+      "value": 1,
+      "icon": "fa-solid fa-star",
+      "trend": { "direction": "down", "delta": -6, "label": "vs Previous Day", "isGood": true },
+      "closedEvents": 44
+    },
+    "totalActive": {
+      "value": 205,
+      "icon": "fa-solid fa-star",
+      "closedEvents": 3517
+    },
+    "totalEvents": {
+      "value": 3711,
+      "icon": "fa-solid fa-chart-bar",
+      "breakdown": { "critical": 191, "major": 3476, "minor": 44 }
+    }
+  },
+  "severityTrends": {
+    "hours": ["02", "04", "06", "08", "10", "12", "14", "16", "18", "20", "22"],
+    "critical": [12, 15, 10, 20, 28, 12, 42, 55, 38, 65, 130],
+    "major": [5, 12, 8, 18, 38, 68, 100, 130, 95, 65, 28],
+    "minor": [5, 8, 5, 8, 12, 8, 10, 12, 10, 8, 12]
+  },
+  "alertActivityByDay": [
+    { "date": "Sat – 21 Feb", "critical": 54, "major": 73, "minor": 81, "total": 208 },
+    { "date": "Fri – 20 Feb", "critical": 273, "major": 155, "minor": 87, "total": 515 },
+    { "date": "Thu – 19 Feb", "critical": 158, "major": 841, "minor": 70, "total": 1069 },
+    { "date": "Wed – 18 Feb", "critical": 104, "major": 108, "minor": 38, "total": 250 },
+    { "date": "Tue – 17 Feb", "critical": 117, "major": 1809, "minor": 54, "total": 1980 },
+    { "date": "Mon – 16 Feb", "critical": 125, "major": 172, "minor": 39, "total": 336 },
+    { "date": "Sun – 15 Feb", "critical": 135, "major": 120, "minor": 40, "total": 295 }
+  ],
+  "heatmapByHour": [
+    { "date": "Sat 21-Feb", "hours": [13,7,5,10,12,8,8,10,4,13,5,9,9,12,9,46,13,6,5,4,0,0,0,0] },
+    { "date": "Fri 20-Feb", "hours": [21,24,19,14,15,21,18,24,31,24,59,39,32,16,23,19,8,12,8,9,12,23,26,18] },
+    { "date": "Thu 19-Feb", "hours": [11,3,6,4,11,6,9,52,6,17,317,31,17,13,10,7,19,60,14,8,22,343,58,25] },
+    { "date": "Wed 18-Feb", "hours": [8,5,3,9,10,5,11,8,6,14,7,8,9,10,18,55,15,12,6,6,3,6,8,8] },
+    { "date": "Tue 17-Feb", "hours": [11,7,3,8,17,12,6,8,5,61,27,334,146,449,165,636,32,15,7,1,6,6,8,10] },
+    { "date": "Mon 16-Feb", "hours": [14,8,7,12,14,6,7,4,119,22,9,11,5,14,10,16,14,12,5,4,5,4,11,3] },
+    { "date": "Sun 15-Feb", "hours": [22,4,5,12,12,6,8,10,7,17,61,5,14,12,6,8,26,14,8,9,5,7,7,10] }
+  ],
+  "eventDetails": [
+    { "status": "OPEN", "severity": "CRITICAL", "creationTime": "2/19/2026 6:44:24 PM", "hostName": "chard.root.local", "message": "snap-core20-2318 Filesystem space utilization > 90% for 2 min." },
+    { "status": "OPEN", "severity": "CRITICAL", "creationTime": "2/19/2026 6:44:24 PM", "hostName": "chard.root.local", "message": "snap-core20-2434 Filesystem space utilization > 90% for 2 min." },
+    { "status": "OPEN", "severity": "CRITICAL", "creationTime": "2/19/2026 6:44:24 PM", "hostName": "chard.root.local", "message": "snap-lxd-24061 Filesystem space utilization > 90% for 2 min." },
+    { "status": "OPEN", "severity": "CRITICAL", "creationTime": "2/19/2026 6:44:24 PM", "hostName": "chard.root.local", "message": "snap-lxd-29619 Filesystem space utilization > 90% for 2 min." },
+    { "status": "CLOSED", "severity": "MINOR", "creationTime": "2/16/2026 3:53:54 AM", "hostName": "fnonsdev.psa.gov.qa", "message": "NT_HEALTH Memory Usage > 80% Memory used for 2 polls." },
+    { "status": "CLOSED", "severity": "CRITICAL", "creationTime": "2/16/2026 3:52:33 AM", "hostName": "bkpstrg.psa.gov.qa", "message": "[ Host Unreachable ] : p-bkpstrg.psa.gov.qa is not responding to ICMP ping checks." },
+    { "status": "CLOSED", "severity": "CRITICAL", "creationTime": "2/16/2026 3:15:42 AM", "hostName": "ruyaprxqc02.reddog.microsoft.com", "message": "Azure Virtual Machine - vmappspnpcpqc2 is NOT RUNNING" },
+    { "status": "ACK", "severity": "MAJOR", "creationTime": "2/21/2026 3:59:52 PM", "hostName": "2.16.30.108", "message": "Operational status of interface 172.16.30.108|Bluetooth04(2) is 2.0. (1=Up, 2=Down)" },
+    { "status": "ACK", "severity": "MAJOR", "creationTime": "2/21/2026 3:59:52 PM", "hostName": "2.16.30.108", "message": "Operational status of interface 172.16.30.108|GigabitEthernet00(1) is 2.0. (1=Up, 2=Down)" },
+    { "status": "CLOSED", "severity": "MAJOR", "creationTime": "2/16/2026 3:20:25 AM", "hostName": "2.16.30.117", "message": "Operational status of interface 172.16.30.117|GigabitEthernet2038(90) is 2.0. (1=Up, 2=Down)" }
+  ],
+  "unavailableDevices": [
+    { "deviceName": "MARKETPLACE", "lastUpdate": "2/21/2026 7:31:16 PM" },
+    { "deviceName": "P-APPHV03", "lastUpdate": "2/7/2026 1:14:57 PM" },
+    { "deviceName": "p-bkpstrg.psa.gov.qa", "lastUpdate": "2/19/2026 1:26:14 PM" },
+    { "deviceName": "P-INFRAHV01", "lastUpdate": "2/7/2026 1:14:57 PM" },
+    { "deviceName": "V-APIAPP01", "lastUpdate": "2/9/2026 7:30:42 PM" },
+    { "deviceName": "v-apiapp01.psa.gov.qa", "lastUpdate": "2/11/2026 1:37:24 PM" },
+    { "deviceName": "vmappspnpcpqc2", "lastUpdate": "2/21/2026 7:27:16 PM" },
+    { "deviceName": "ubuntu-sr-dev", "lastUpdate": "2/9/2026 9:10:02 AM" },
+    { "deviceName": "v-dlpfaefm", "lastUpdate": "2/21/2026 7:33:47 PM" },
+    { "deviceName": "QCH-FN-SFW-02", "lastUpdate": "2/21/2026 7:31:16 PM" }
+  ]
+}

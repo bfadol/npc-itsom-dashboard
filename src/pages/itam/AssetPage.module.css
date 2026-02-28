@@ -1,0 +1,167 @@
+/* ── Asset Page styles ── */
+
+/* Category Table */
+.catTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  font-family: var(--font-brand);
+}
+
+.catTable th {
+  font-size: 9px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border-card);
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.catTable td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border-card);
+  color: var(--text-primary);
+}
+
+.catTable tbody tr:hover {
+  background: rgba(100, 130, 180, 0.06);
+}
+
+.tc { text-align: center !important; }
+
+.catIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: rgba(0, 103, 193, 0.15);
+  color: var(--color-blue);
+  font-size: 11px;
+  margin-right: 8px;
+}
+
+.totalRow td {
+  border-top: 2px solid var(--border-card);
+  border-bottom: none;
+  font-weight: 700;
+}
+
+/* Percentage bar in category table */
+.pctWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pctBar {
+  flex: 1;
+  height: 5px;
+  background: rgba(0, 40, 100, 0.15);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.pctFill {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #1a9e8a, #14CA74);
+}
+
+.pctVal {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+  min-width: 36px;
+  text-align: right;
+}
+
+/* Coverage list */
+.coverageList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.coverageItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border-card);
+}
+
+.coverageItem:last-child {
+  border-bottom: none;
+}
+
+.coverageName {
+  font-size: 11px;
+  color: var(--text-primary);
+}
+
+.coveragePct {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* Sizing Tables */
+.sizingBlock {
+  margin-bottom: 20px;
+}
+
+.sizingBlock:last-child {
+  margin-bottom: 0;
+}
+
+.sizingHeader {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+  padding: 8px 12px;
+  border-left: 3px solid;
+  margin-bottom: 8px;
+  background: rgba(0, 40, 100, 0.08);
+  border-radius: 0 6px 6px 0;
+}
+
+.sizingTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  font-family: var(--font-brand);
+}
+
+.sizingTable th {
+  font-size: 9px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--border-card);
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.sizingTable td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border-card);
+  color: var(--text-primary);
+}
+
+.parentCell {
+  font-weight: 600;
+  vertical-align: top;
+  border-right: 1px solid var(--border-card);
+}
+
+.currentVal {
+  color: #4a80d0;
+  font-weight: 700;
+}

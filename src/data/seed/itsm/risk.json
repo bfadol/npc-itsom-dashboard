@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "source": "Risk Register",
+    "dateRange": { "from": "2025-01-05", "to": "2026-02-25" },
+    "lastRefresh": "2026-02-21T14:30:00Z"
+  },
+  "filters": {
+    "categories": ["All", "Technology", "Process & Governance", "People & Skills", "Vendor & Third Party", "Budget & Financial", "Compliance"],
+    "owners": ["All", "Khaleel", "Samad", "Imtiaz", "Rashid", "Nadia", "Tariq"],
+    "statuses": ["All", "Open", "Closed", "In Progress"],
+    "responseTypes": ["All", "Mitigate", "Accept", "Transfer", "Avoid"]
+  },
+  "riskMatrix": {
+    "type": "inherent",
+    "cells": [
+      { "probability": 4, "impact": 3, "count": 1 },
+      { "probability": 4, "impact": 4, "count": 4 },
+      { "probability": 3, "impact": 4, "count": 2 }
+    ]
+  },
+  "riskPriorityByCategory": [
+    {
+      "category": "Security Awareness & Training",
+      "inherent": 32,
+      "residual": 13,
+      "target": 12
+    },
+    {
+      "category": "Operational & Infrastructure",
+      "inherent": 30,
+      "residual": 14,
+      "target": 14
+    },
+    {
+      "category": "Network Security",
+      "inherent": 28,
+      "residual": 8,
+      "target": 4
+    },
+    {
+      "category": "Cyber Crime",
+      "inherent": 25,
+      "residual": 6,
+      "target": 4
+    },
+    {
+      "category": "Compliance",
+      "inherent": 15,
+      "residual": 12,
+      "target": 12
+    }
+  ],
+  "risksByPriority": {
+    "critical": 10,
+    "high": 4,
+    "medium": 3,
+    "low": 1
+  },
+  "risksByStatus": {
+    "closed": { "count": 6, "percentage": 43 },
+    "open": { "count": 8, "percentage": 57 }
+  },
+  "risksByResponseType": {
+    "mitigate": 11,
+    "accept": 1,
+    "avoid": 1,
+    "transfer": 1
+  },
+  "riskByOwner": [
+    { "owner": "Khaleel", "inherent": 25, "residual": 4, "target": 4 },
+    { "owner": "Samad", "inherent": 25, "residual": 6, "target": 4 },
+    { "owner": "Imtiaz", "inherent": 20, "residual": 6, "target": 4 },
+    { "owner": "Rashid", "inherent": 20, "residual": 4, "target": 4 },
+    { "owner": "Nadia", "inherent": 16, "residual": 4, "target": 2 },
+    { "owner": "Tariq", "inherent": 16, "residual": 9, "target": 6 },
+    { "owner": "Hassan", "inherent": 15, "residual": 12, "target": 12 }
+  ],
+  "riskRegister": [
+    { "riskId": "RSK-001", "description": "Delay in delivery due to resource shortage", "category": "People", "owner": "Khaleel", "probability": "High", "impact": "High", "status": "Critical" },
+    { "riskId": "RSK-002", "description": "License expiry before renewal completion", "category": "Technology", "owner": "Samad", "probability": "Med", "impact": "High", "status": "Critical" },
+    { "riskId": "RSK-003", "description": "Incomplete process documentation", "category": "Process", "owner": "Imtiaz", "probability": "Med", "impact": "Med", "status": "High" },
+    { "riskId": "RSK-004", "description": "System integration conflicts with legacy", "category": "Technology", "owner": "Rashid", "probability": "Med", "impact": "Med", "status": "High" },
+    { "riskId": "RSK-005", "description": "Compliance risk with federal requirements", "category": "Compliance", "owner": "Nadia", "probability": "Low", "impact": "High", "status": "High" },
+    { "riskId": "RSK-006", "description": "Single vendor dependency - 3rd party", "category": "Vendor", "owner": "Tariq", "probability": "Low", "impact": "Med", "status": "Medium" },
+    { "riskId": "RSK-007", "description": "Data breach risk due to weak access controls", "category": "Cyber", "owner": "Hassan", "probability": "High", "impact": "High", "status": "Critical" }
+  ]
+}

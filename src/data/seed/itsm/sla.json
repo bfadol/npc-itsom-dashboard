@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "source": "Ru'ya – ITSM SLA Management",
+    "dateRange": { "from": "2026-02-01", "to": "2026-02-28" },
+    "lastRefresh": "2026-02-21T14:30:00Z"
+  },
+  "overview": {
+    "kpis": {
+      "overallCompliance": {
+        "value": 97.2,
+        "unit": "%",
+        "icon": "fa-solid fa-circle-check",
+        "colorVariant": "teal",
+        "trend": { "direction": "up", "delta": 2.1, "label": "vs Last Month", "isGood": true }
+      },
+      "totalBreaches": {
+        "value": 11,
+        "icon": "fa-solid fa-bell",
+        "colorVariant": "red",
+        "trend": { "direction": "down", "delta": -3, "label": "vs Last Month", "isGood": true }
+      },
+      "p1Response": {
+        "value": "0.8h",
+        "icon": "fa-solid fa-stopwatch",
+        "colorVariant": "blue",
+        "trend": { "direction": "flat", "delta": "Within SLA", "label": "", "isGood": true }
+      },
+      "csatScore": {
+        "value": "4.6/5",
+        "icon": "fa-solid fa-star",
+        "colorVariant": "gold",
+        "trend": { "direction": "up", "delta": 0.2, "label": "vs Last Month", "isGood": true }
+      }
+    },
+    "complianceByPriority": [
+      { "priority": "P1 Critical", "target": "1h", "percentage": 91, "color": "#8b1837" },
+      { "priority": "P2 High", "target": "4h", "percentage": 96, "color": "#c97b30" },
+      { "priority": "P3 Medium", "target": "8h", "percentage": 98, "color": "#0e3a82" },
+      { "priority": "P4 Low", "target": "24h", "percentage": 99, "color": "#1a9e8a" }
+    ],
+    "slaTrend": [
+      { "month": "Sep", "value": 96.2 },
+      { "month": "Oct", "value": 95.5 },
+      { "month": "Nov", "value": 96.8 },
+      { "month": "Dec", "value": 96.0 },
+      { "month": "Jan", "value": 97.0 },
+      { "month": "Feb", "value": 97.2 }
+    ],
+    "breachSummary": [
+      { "category": "Incidents", "totalTickets": 245, "withinSLA": 238, "breached": 7, "compliancePercent": 97.1 },
+      { "category": "Service Requests", "totalTickets": 183, "withinSLA": 179, "breached": 4, "compliancePercent": 97.8 },
+      { "category": "Total", "totalTickets": 428, "withinSLA": 417, "breached": 11, "compliancePercent": 97.4, "isTotal": true }
+    ]
+  },
+  "incidents": {
+    "kpis": {
+      "slaCompliance": {
+        "value": 97.1,
+        "unit": "%",
+        "icon": "fa-solid fa-circle-check",
+        "colorVariant": "teal",
+        "trend": { "direction": "up", "delta": 1.8, "label": "vs Last Month", "isGood": true }
+      },
+      "slaBreaches": {
+        "value": 7,
+        "icon": "fa-solid fa-bell",
+        "colorVariant": "red",
+        "subtitle": "Of 245 total incidents"
+      },
+      "avgResponseTime": {
+        "value": "1.4h",
+        "icon": "fa-solid fa-stopwatch",
+        "colorVariant": "blue",
+        "trend": { "direction": "flat", "delta": "Within SLA", "label": "", "isGood": true }
+      },
+      "p1BreachRate": {
+        "value": "9%",
+        "icon": "fa-solid fa-fire",
+        "colorVariant": "gold",
+        "trend": { "direction": "up", "delta": 2, "label": "vs Last Month", "isGood": false }
+      }
+    },
+    "slaByPriority": [
+      { "priority": "P1 Critical", "target": "1h response / 4h resolve", "percentage": 91, "tickets": 12, "breaches": 1, "avgResponse": "0.8h", "color": "#8b1837" },
+      { "priority": "P2 High", "target": "4h response / 8h resolve", "percentage": 96, "tickets": 75, "breaches": 3, "avgResponse": "3.1h", "color": "#c97b30" },
+      { "priority": "P3 Medium", "target": "8h response / 24h resolve", "percentage": 98, "tickets": 118, "breaches": 2, "avgResponse": "7.2h", "color": "#4a80d0" },
+      { "priority": "P4 Low", "target": "24h response / 72h resolve", "percentage": 100, "tickets": 40, "breaches": 0, "avgResponse": "18h", "color": "#1a9e8a" }
+    ],
+    "slaTrend": [
+      { "month": "Sep", "value": 95.0 },
+      { "month": "Oct", "value": 94.2 },
+      { "month": "Nov", "value": 96.0 },
+      { "month": "Dec", "value": 95.5 },
+      { "month": "Jan", "value": 96.5 },
+      { "month": "Feb", "value": 97.1 }
+    ],
+    "breachDetails": [
+      { "incidentId": "INC-2041", "priority": "P1", "category": "Infrastructure", "responseTime": "1.3h", "target": "1h", "status": "Breached" },
+      { "incidentId": "INC-2035", "priority": "P2", "category": "Application", "responseTime": "5.1h", "target": "4h", "status": "Breached" },
+      { "incidentId": "INC-2029", "priority": "P2", "category": "Network", "responseTime": "4.7h", "target": "4h", "status": "Breached" },
+      { "incidentId": "INC-2018", "priority": "P2", "category": "Database", "responseTime": "4.2h", "target": "4h", "status": "Breached" },
+      { "incidentId": "INC-2011", "priority": "P3", "category": "Security", "responseTime": "9.1h", "target": "8h", "status": "Breached" }
+    ]
+  },
+  "serviceRequests": {
+    "kpis": {
+      "slaCompliance": {
+        "value": 97.8,
+        "unit": "%",
+        "icon": "fa-solid fa-circle-check",
+        "colorVariant": "teal",
+        "trend": { "direction": "up", "delta": 2.5, "label": "vs Last Month", "isGood": true }
+      },
+      "srBreaches": {
+        "value": 4,
+        "icon": "fa-solid fa-bell",
+        "colorVariant": "red",
+        "subtitle": "Of 183 total SRs"
+      },
+      "avgFulfillmentTime": {
+        "value": "2.1d",
+        "icon": "fa-solid fa-stopwatch",
+        "colorVariant": "blue",
+        "trend": { "direction": "flat", "delta": "Within SLA", "label": "", "isGood": true }
+      },
+      "srCsat": {
+        "value": "4.7/5",
+        "icon": "fa-solid fa-star",
+        "colorVariant": "gold",
+        "trend": { "direction": "up", "delta": 0.1, "label": "vs Last Month", "isGood": true }
+      }
+    },
+    "slaByCategory": [
+      { "category": "Access & Permissions", "percentage": 99, "srCount": 68, "breaches": 1, "target": "2 days", "color": "#1a9e8a" },
+      { "category": "Hardware Provisioning", "percentage": 94, "srCount": 33, "breaches": 2, "target": "5 days", "color": "#c97b30" },
+      { "category": "Software Installation", "percentage": 98, "srCount": 54, "breaches": 1, "target": "3 days", "color": "#4a80d0" },
+      { "category": "Account Management", "percentage": 100, "srCount": 28, "breaches": 0, "target": "1 day", "color": "#1a9e8a" }
+    ],
+    "slaTrend": [
+      { "month": "Sep", "value": 95.5 },
+      { "month": "Oct", "value": 94.0 },
+      { "month": "Nov", "value": 96.5 },
+      { "month": "Dec", "value": 95.8 },
+      { "month": "Jan", "value": 97.0 },
+      { "month": "Feb", "value": 97.8 }
+    ],
+    "breachDetails": [
+      { "srId": "SR-3841", "category": "Hardware Provisioning", "requestor": "IT Operations", "fulfillmentTime": "6.2d", "target": "5d", "status": "Breached" },
+      { "srId": "SR-3829", "category": "Hardware Provisioning", "requestor": "Finance", "fulfillmentTime": "5.5d", "target": "5d", "status": "Breached" },
+      { "srId": "SR-3812", "category": "Software Installation", "requestor": "HR Dept", "fulfillmentTime": "3.8d", "target": "3d", "status": "Breached" },
+      { "srId": "SR-3804", "category": "Access & Permissions", "requestor": "Planning", "fulfillmentTime": "2.3d", "target": "2d", "status": "Breached" }
+    ]
+  }
+}

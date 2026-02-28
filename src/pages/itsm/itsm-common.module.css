@@ -1,0 +1,279 @@
+/* ── Shared ITSM Page Layout Grids ── */
+
+.kpiRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--gap-lg);
+  margin-bottom: var(--gap-md);
+}
+
+.kpiRow5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--gap-lg);
+  margin-bottom: var(--gap-md);
+}
+
+.kpiRow3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-lg);
+  margin-bottom: var(--gap-md);
+}
+
+.kpiRow6 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: var(--gap-lg);
+  margin-bottom: var(--gap-md);
+}
+
+.g2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-lg);
+  margin-bottom: var(--gap-md);
+}
+
+.g2Asym {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: var(--gap-lg);
+  margin-bottom: var(--gap-md);
+}
+
+.g3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-lg);
+  margin-bottom: var(--gap-md);
+}
+
+.section {
+  margin-bottom: var(--gap-md);
+}
+
+/* ── Tab Strip (SLA, Risk) ── */
+.tabRow {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 7px 18px;
+  border-radius: var(--radius-md);
+  font-size: 11px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: rgba(100, 130, 180, 0.08);
+  color: var(--text-muted);
+  transition: all var(--transition-fast);
+  font-family: var(--font-brand);
+  font-weight: 600;
+}
+
+.tab:hover {
+  background: rgba(100, 130, 180, 0.18);
+}
+
+.tabActive {
+  background: var(--brand-accent);
+  color: var(--text-primary);
+  border-color: var(--brand-accent);
+}
+
+/* ── Stat Boxes (CSAT breakdown, aging, status overview) ── */
+.statRow {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.statBox {
+  flex: 1;
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px 6px;
+  border: 1px solid var(--border-card);
+}
+
+.statBoxLabel {
+  font-size: 9px;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 2px;
+}
+
+.statBoxValue {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* ── CSAT Custom Card ── */
+.csatCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  padding: var(--gap-md);
+  backdrop-filter: blur(20px);
+  position: relative;
+  overflow: hidden;
+}
+
+.csatCard::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--brand-gold);
+}
+
+.csatLabel {
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.csatLabel i {
+  color: var(--brand-gold);
+}
+
+.csatSubtitle {
+  font-size: 9px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.csatValue {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+  margin-bottom: 4px;
+}
+
+.csatNumber {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.csatMax {
+  font-family: var(--font-display);
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.starFull {
+  color: var(--brand-gold);
+}
+
+.starDim {
+  color: rgba(162, 149, 116, 0.3);
+}
+
+.csatProgWrap {
+  margin-bottom: 6px;
+}
+
+.csatProgBar {
+  height: 5px;
+  background: rgba(0, 40, 100, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.csatProgFill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.csatTrend {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.csatTrendUp {
+  color: var(--color-green);
+}
+
+.csatTrendDown {
+  color: var(--color-red);
+}
+
+.csatTrendLabel {
+  color: var(--text-muted);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1400px) {
+  .kpiRow5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .kpiRow6 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1100px) {
+  .kpiRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .kpiRow5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .g2,
+  .g2Asym,
+  .g3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .kpiRow,
+  .kpiRow3,
+  .kpiRow5,
+  .kpiRow6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .kpiRow,
+  .kpiRow3,
+  .kpiRow5,
+  .kpiRow6 {
+    grid-template-columns: 1fr;
+  }
+
+  .g2,
+  .g2Asym,
+  .g3 {
+    grid-template-columns: 1fr;
+  }
+
+  .statRow {
+    flex-wrap: wrap;
+  }
+
+  .statBox {
+    min-width: calc(50% - 4px);
+  }
+}

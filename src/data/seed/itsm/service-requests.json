@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "source": "Ru'ya – ITSM Service Request Mgmt. Module",
+    "dateRange": { "from": "2026-02-01", "to": "2026-02-21" },
+    "lastRefresh": "2026-02-21T14:30:00Z",
+    "frequency": "Weekly / Monthly"
+  },
+  "kpis": {
+    "openRequests": {
+      "value": 156,
+      "icon": "fa-solid fa-folder-open",
+      "colorVariant": "blue",
+      "trend": { "direction": "down", "delta": -12, "label": "vs Last Week", "isGood": true }
+    },
+    "fulfilledToday": {
+      "value": 43,
+      "icon": "fa-solid fa-circle-check",
+      "colorVariant": "teal",
+      "trend": { "direction": "up", "delta": 8, "label": "vs Yesterday", "isGood": true }
+    },
+    "slaBreached": {
+      "value": 18,
+      "icon": "fa-solid fa-clock",
+      "colorVariant": "red",
+      "trend": { "direction": "up", "delta": 3, "label": "vs Last Week", "isGood": false }
+    },
+    "avgFulfillment": {
+      "value": 2.4,
+      "unit": "d",
+      "icon": "fa-solid fa-chart-bar",
+      "colorVariant": "gold",
+      "trend": { "direction": "down", "delta": -0.3, "label": "vs Last Month", "isGood": true }
+    },
+    "fulfilledViaAutomation": {
+      "value": 89,
+      "icon": "fa-solid fa-robot",
+      "colorVariant": "teal",
+      "trend": { "direction": "up", "delta": "57% of total fulfilled", "label": "", "isGood": true }
+    },
+    "csat": {
+      "value": 4.5,
+      "max": 5.0,
+      "icon": "fa-solid fa-star",
+      "colorVariant": "gold",
+      "progressBar": { "value": 90, "gradient": "linear-gradient(90deg,#8a6520,#b8966a)" },
+      "trend": { "direction": "up", "delta": 0.3, "label": "vs Last Month", "isGood": true },
+      "subtitle": "Customer Satisfaction Score | Monthly"
+    },
+    "fcr": {
+      "value": 68,
+      "unit": "%",
+      "icon": "fa-solid fa-phone",
+      "colorVariant": "teal",
+      "progressBar": { "value": 68, "gradient": "linear-gradient(90deg,#1a7a60,#1abc9c)" },
+      "trend": { "direction": "up", "delta": 3, "label": "vs Last Month", "isGood": true },
+      "subtitle": "Resolved on 1st contact / total requests x 100"
+    },
+    "avgRequestFulfillmentTime": {
+      "value": 2.4,
+      "unit": "days",
+      "icon": "fa-solid fa-stopwatch",
+      "colorVariant": "blue",
+      "progressBar": { "value": 55, "gradient": "linear-gradient(90deg,#1a3a6c,#2471a3)" },
+      "trend": { "direction": "down", "delta": -0.3, "label": "vs Last Month", "isGood": true },
+      "subtitle": "Sum fulfillment times / total requests | Weekly/Monthly"
+    },
+    "avgHandlingTime": {
+      "value": 22,
+      "unit": "min",
+      "icon": "fa-solid fa-clock",
+      "colorVariant": "orange",
+      "progressBar": { "value": 37, "gradient": "linear-gradient(90deg,#7a3c0a,#e67e22)" },
+      "trend": { "direction": "down", "delta": -2, "label": "vs Last Month", "isGood": true },
+      "subtitle": "Total handle time / total requests handled | Monthly"
+    }
+  },
+  "responseSLA": [
+    { "priority": "Urgent", "label": "URGENT", "target": "1 hr", "met": 41, "total": 50, "percentage": 82, "breached": 9, "color": "red" },
+    { "priority": "High", "label": "HIGH", "target": "4 hrs", "met": 89, "total": 100, "percentage": 89, "breached": 11, "color": "orange" },
+    { "priority": "Medium", "label": "MEDIUM", "target": "8 hrs", "met": 285, "total": 300, "percentage": 95, "breached": 15, "color": "blue" },
+    { "priority": "Low", "label": "LOW", "target": "24 hrs", "met": 196, "total": 200, "percentage": 98, "breached": 4, "color": "green" }
+  ],
+  "resolutionSLA": [
+    { "priority": "Urgent", "label": "URGENT", "target": "4 hrs", "met": 38, "total": 50, "percentage": 76, "breached": 12, "color": "red" },
+    { "priority": "High", "label": "HIGH", "target": "1 day", "met": 84, "total": 100, "percentage": 84, "breached": 16, "color": "orange" },
+    { "priority": "Medium", "label": "MEDIUM", "target": "3 days", "met": 279, "total": 300, "percentage": 93, "breached": 21, "color": "blue" },
+    { "priority": "Low", "label": "LOW", "target": "5 days", "met": 194, "total": 200, "percentage": 97, "breached": 6, "color": "green" }
+  ],
+  "requestsByCategory": [
+    { "category": "Software", "count": 59, "percentage": 38, "color": "blue" },
+    { "category": "Hardware", "count": 37, "percentage": 24, "color": "orange" },
+    { "category": "Access", "count": 30, "percentage": 19, "color": "green" },
+    { "category": "Network", "count": 19, "percentage": 12, "color": "red" },
+    { "category": "Other", "count": 11, "percentage": 7, "color": "gray" }
+  ],
+  "agingRequests": [
+    { "range": "1-3 days", "count": 11, "color": "orange" },
+    { "range": ">3 days", "count": 7, "color": "red" }
+  ]
+}

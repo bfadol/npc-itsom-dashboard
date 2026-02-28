@@ -1,0 +1,91 @@
+/* ── Entra ID Page styles ── */
+
+/* KPI Card */
+.entraCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-xl);
+  padding: 14px 16px;
+  backdrop-filter: blur(20px);
+  border-top: 3px solid var(--border-card);
+  transition: border-color var(--transition-fast);
+}
+
+.entraCard.highlighted {
+  background: linear-gradient(165deg, rgba(184,34,63,0.12) 0%, rgba(0,103,193,0.02) 50%, rgba(184,34,63,0.08) 100%);
+}
+
+.entraHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.entraLabel {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-weight: 600;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.entraSublabel {
+  font-size: 9px;
+  color: var(--text-dim);
+  font-weight: 400;
+}
+
+.entraBadge {
+  font-size: 8px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.bblue { background: rgba(74,128,208,0.2); color: #5a9aef; }
+.bgreen { background: rgba(20,202,116,0.2); color: #14CA74; }
+.borange { background: rgba(201,123,48,0.2); color: #c97b30; }
+.bred { background: rgba(184,34,63,0.2); color: #FF5A65; }
+
+.entraValue {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+
+.entraSubtitle {
+  font-size: 9px;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+
+.entraTarget {
+  font-size: 9px;
+  color: var(--color-orange);
+  margin-top: 2px;
+  font-weight: 600;
+}
+
+.entraRecords {
+  font-size: 9px;
+  color: var(--text-dim);
+  margin-top: 4px;
+}
+
+/* Boolean icon cell helpers */
+.iconYes { color: var(--color-green); }
+.iconNo { color: var(--color-red); opacity: 0.6; }
+.iconWarn { color: var(--color-orange); }
+
+/* Expiry days cell */
+.expiryNone { color: var(--text-dim); }
+.expirySoon { color: var(--color-red); font-weight: 700; }
+.expiryMed { color: var(--color-orange); font-weight: 600; }
+.expiryOk { color: var(--text-muted); }

@@ -1,0 +1,99 @@
+.wrap {
+  overflow-x: auto;
+}
+
+/* Default table */
+.tbl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11.5px;
+}
+
+.tbl th {
+  background: var(--bg-table-head);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: var(--fs-base);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-table-head);
+  font-weight: var(--fw-medium);
+}
+
+.tbl td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-table);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.tbl tr:hover td {
+  background: rgba(0, 103, 193, 0.06);
+}
+
+/* Severity table */
+.sevTbl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-sm);
+}
+
+.sevTbl th {
+  background: rgba(5, 27, 68, 0.20);
+  color: var(--text-muted);
+  padding: 7px 10px;
+  font-size: 9.5px;
+  font-weight: var(--fw-semi);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.sevTbl td {
+  padding: 7px 10px;
+  border-bottom: 1px solid rgba(14, 58, 130, 0.06);
+  color: var(--text-secondary);
+}
+
+.sevTbl tr:hover td {
+  background: rgba(162, 149, 116, 0.04);
+}
+
+/* Event table */
+.eventTbl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--fs-sm);
+}
+
+.eventTbl th {
+  background: rgba(5, 27, 68, 0.20);
+  color: var(--text-muted);
+  padding: 8px 10px;
+  font-size: 9px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  font-weight: var(--fw-semi);
+}
+
+.eventTbl td {
+  padding: 7px 10px;
+  border-bottom: 1px solid rgba(14, 58, 130, 0.06);
+  color: var(--text-secondary);
+  font-size: 10.5px;
+}
+
+.eventTbl tr:hover td {
+  background: rgba(162, 149, 116, 0.04);
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}

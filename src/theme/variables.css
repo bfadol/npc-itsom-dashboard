@@ -1,0 +1,188 @@
+/*
+ * ================================================================
+ *  NPC DASHBOARD PORTAL — CENTRALIZED THEME CONFIGURATION
+ *  Extracted from reference/NPC_Dashboard_FA_Icons.html :root
+ * ================================================================
+ */
+
+:root {
+
+  /* ──────────────────────────────────────────────
+   * 1. BRAND COLORS
+   * ────────────────────────────────────────────── */
+  --brand-primary:        #051b44;
+  --brand-accent:         #8b1837;
+  --brand-gold:           #a29576;
+  --brand-gold-light:     #b8a98a;
+  --brand-bg-deep:        #030F1F;
+
+  /* ──────────────────────────────────────────────
+   * 2. BACKGROUND COLORS
+   * ────────────────────────────────────────────── */
+  --bg-main:         #030F1F;
+  --bg-sidebar:      rgba(3, 9, 20, 0.98);
+  --bg-topbar:       rgba(3, 9, 20, 0.97);
+  --bg-card:         linear-gradient(165deg,
+                       rgba(0,103,193,0.10) 0%,
+                       rgba(0,103,193,0.02) 50%,
+                       rgba(0,103,193,0.18) 100%);
+  --bg-card-hover:   linear-gradient(164.95deg,
+                       rgba(0,103,193,0.10) 0%,
+                       rgba(0,103,193,0.78) 100%);
+  --bg-card-selected:linear-gradient(165deg,
+                       rgba(0,103,193,0.15) 0%,
+                       rgba(5,27,68,0.85) 50%,
+                       rgba(0,103,193,0.22) 100%);
+  --bg-table-head:   rgba(0, 40, 100, 0.25);
+  --bg-nav-active:   linear-gradient(165deg, rgba(0,103,193,0.15) 0%, rgba(0,103,193,0.05) 100%);
+  --bg-nav-hover:    rgba(162, 149, 116, 0.08);
+  --bg-btn-back:     linear-gradient(165deg,
+                       rgba(0,103,193,0.10) 0%,
+                       rgba(0,103,193,0.02) 50%,
+                       rgba(0,103,193,0.18) 100%);
+  --bg-landing-overlay: linear-gradient(135deg,
+                       rgba(3,9,20,0.93) 0%,
+                       rgba(5,27,68,0.82) 50%,
+                       rgba(20,5,12,0.88) 100%);
+  --bg-landing-glow: radial-gradient(ellipse, rgba(139,24,55,0.32) 0%, transparent 70%);
+
+  /* ──────────────────────────────────────────────
+   * 3. STATUS / ALERT COLORS
+   * ────────────────────────────────────────────── */
+  --color-red:          #FF5A65;
+  --color-red-dark:     #8b1837;
+  --color-red-bright:   #b8223f;
+  --color-orange:       #c97b30;
+  --color-green:        #14CA74;
+  --color-green-teal:   #1a9e8a;
+  --color-blue:         #4a80d0;
+  --color-blue-dark:    #0c2a5e;
+  --color-blue-mid:     #0e3a82;
+  --color-purple:       #9b59b6;
+  --color-gold-kpi:     #a29576;
+  --color-critical:     #e74c3c;
+  --color-major:        #e67e22;
+  --color-minor:        #3498db;
+
+  /* ──────────────────────────────────────────────
+   * 4. TEXT COLORS
+   * ────────────────────────────────────────────── */
+  --text-primary:   #ffffff;
+  --text-secondary: rgba(255,255,255,0.70);
+  --text-muted:     rgba(180, 184, 188, 1);
+  --text-kpi-sub:   rgba(213, 213, 213, 0.7);
+
+  /* ──────────────────────────────────────────────
+   * 5. BORDERS & GLOW
+   * ────────────────────────────────────────────── */
+  --border:            rgba(237, 237, 237, 0.13);
+  --border-card:       rgba(237, 237, 237, 0.20);
+  --border-card-hover: rgba(237, 237, 237, 0.35);
+  --border-gold:       rgba(162, 149, 116, 0.30);
+  --border-topbar:     rgba(237, 237, 237, 0.12);
+  --border-sidebar:    rgba(237, 237, 237, 0.10);
+  --border-table:      rgba(237, 237, 237, 0.08);
+  --border-table-head: rgba(237, 237, 237, 0.15);
+  --glow-gold:         rgba(162, 149, 116, 0.12);
+  --glow-red:          rgba(139,  24,  55, 0.35);
+
+  /* ──────────────────────────────────────────────
+   * 6. TYPOGRAPHY
+   * ────────────────────────────────────────────── */
+  --font-brand:    'Cairo', 'Inter', sans-serif;
+  --font-display:  'Rajdhani', sans-serif;
+
+  --fs-xs:   9px;
+  --fs-sm:   11px;
+  --fs-base: 12px;
+  --fs-md:   14px;
+  --fs-lg:   15px;
+  --fs-xl:   17px;
+  --fs-2xl:  20px;
+  --fs-3xl:  26px;
+  --fs-kpi:  50px;
+
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semi:   600;
+  --fw-bold:   700;
+  --fw-black:  800;
+
+  /* ──────────────────────────────────────────────
+   * 7. SPACING & LAYOUT
+   * ────────────────────────────────────────────── */
+  --sidebar-w:  230px;
+  --topbar-h:   64px;
+  --gap-sm:     10px;
+  --gap-md:     14px;
+  --gap-lg:     16px;
+  --gap-xl:     18px;
+  --pad-card:   24px;
+  --pad-kpi:    20px 24px;
+  --pad-page:   24px;
+
+  /* ──────────────────────────────────────────────
+   * 8. BORDER RADIUS
+   * ────────────────────────────────────────────── */
+  --radius-sm:   3px;
+  --radius-md:   6px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-2xl:  32px;
+  --radius-pill: 20px;
+
+  /* ──────────────────────────────────────────────
+   * 9. SHADOWS & BLUR
+   * ────────────────────────────────────────────── */
+  --shadow-card:   0 6px 6px rgba(0,0,0,0.20), 0 0 20px rgba(0,0,0,0.10);
+  --shadow-topbar: 0 4px 20px rgba(0,0,0,0.30);
+  --blur-glass:    blur(20px);
+
+  /* ──────────────────────────────────────────────
+   * 10. ICON CONFIGURATION
+   * ────────────────────────────────────────────── */
+  --icon-color:         #b8966a;
+  --icon-size:          42px;
+  --icon-wrap-size:     56px;
+  --icon-stroke-w:      1.5;
+  --icon-opacity:       0.85;
+  --icon-opacity-hover: 1;
+
+  /* ──────────────────────────────────────────────
+   * 11. CHART / GRAPH COLORS
+   * ────────────────────────────────────────────── */
+  --chart-1:  #0067c1;
+  --chart-2:  #a29576;
+  --chart-3:  #1a9e8a;
+  --chart-4:  #8b1837;
+  --chart-5:  #c97b30;
+  --chart-6:  #4a80d0;
+  --chart-7:  #9b59b6;
+  --chart-8:  #14CA74;
+
+  /* ──────────────────────────────────────────────
+   * 12. HEATMAP COLORS
+   * ────────────────────────────────────────────── */
+  --heatmap-0-bg:    rgba(5,27,68,0.15);
+  --heatmap-1-bg:    rgba(20,80,180,0.35);   --heatmap-1-text: #8fc8ff;
+  --heatmap-2-bg:    rgba(201,123,48,0.45);  --heatmap-2-text: #f5a742;
+  --heatmap-3-bg:    rgba(201,123,48,0.75);  --heatmap-3-text: #f5a742;
+  --heatmap-4-bg:    rgba(139,24,55,0.75);   --heatmap-4-text: #ff7b8a;
+  --heatmap-5-bg:    rgba(184,34,63,0.95);   --heatmap-5-text: #ffaaaa;
+
+  /* ──────────────────────────────────────────────
+   * 13. PROGRESS BARS
+   * ────────────────────────────────────────────── */
+  --prog-track:     rgba(0, 40, 100, 0.40);
+  --prog-height:    5px;
+  --prog-radius:    3px;
+  --prog-transition: width 1s ease;
+
+  /* ──────────────────────────────────────────────
+   * 14. ANIMATION TIMING
+   * ────────────────────────────────────────────── */
+  --transition-fast:  0.2s;
+  --transition-med:   0.3s;
+  --transition-slow:  0.8s;
+  --pulse-duration:   2s;
+}

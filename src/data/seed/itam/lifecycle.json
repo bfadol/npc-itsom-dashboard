@@ -1,0 +1,162 @@
+{
+  "metadata": {
+    "source": "Enterprise Asset Lifecycle Compliance Dashboard",
+    "dateRange": { "from": "2026-02-01", "to": "2026-02-28" },
+    "lastRefresh": "2026-02-21T14:30:00Z",
+    "assetType": "Software Asset Management",
+    "category": "Software Instance"
+  },
+  "filters": {
+    "vendors": ["All", "Microsoft", "BMC", "Bitdefender", "Veritas", "Zabbix", "Azure", "Elastic"],
+    "deviceTypes": ["All", "Server", "Workstation", "Network Device", "Storage", "Virtual Machine"],
+    "lifecycleStatuses": ["All", "In Support", "Expiring < 12 Months", "Expired", "Unknown"]
+  },
+  "reports": ["eoes", "eos", "eoss", "eol"],
+  "eoes": {
+    "label": "End of Extended Support",
+    "kpis": {
+      "totalAssets": { "value": 1148, "icon": "fa-solid fa-bars", "subtitle": "Software Instances" },
+      "inSupport": { "value": 39, "icon": "fa-solid fa-circle-check", "colorVariant": "teal", "subtitle": "Currently supported" },
+      "expiring": { "value": 19, "icon": "fa-solid fa-stopwatch", "colorVariant": "orange", "subtitle": "Require attention" },
+      "expired": { "value": 26, "icon": "fa-solid fa-triangle-exclamation", "colorVariant": "red", "subtitle": "Past end of support" },
+      "unknown": { "value": 1083, "icon": "fa-solid fa-circle-question", "subtitle": "Status unclassified" }
+    },
+    "lifecycleByAssetType": [
+      { "name": "Microsoft Re...", "total": 117, "segments": { "expired": 40, "unknown": 60 } },
+      { "name": "Microsoft Sys...", "total": 110, "segments": { "expiring": 30, "unknown": 70 } },
+      { "name": "BMC PATROL...", "total": 109, "segments": { "inSupport": 25, "unknown": 75 } },
+      { "name": "Bitdefender E...", "total": 96, "segments": { "inSupport": 82, "unknown": 18 } },
+      { "name": "Microsoft Task...", "total": 67, "segments": { "expired": 20, "unknown": 80 } },
+      { "name": "Veritas NetBa...", "total": 60, "segments": { "expiring": 45, "unknown": 55 } },
+      { "name": "Zabbix Agent", "total": 53, "segments": { "inSupport": 100 } },
+      { "name": "Microsoft IIS...", "total": 43, "segments": { "expired": 30, "unknown": 70 } },
+      { "name": "Azure Log An...", "total": 36, "segments": { "inSupport": 75, "unknown": 25 } },
+      { "name": "Elastic Winlog...", "total": 32, "segments": { "unknown": 100 } },
+      { "name": "Microsoft SQL...", "total": 26, "segments": { "expired": 50, "unknown": 50 } },
+      { "name": "Azure Recover...", "total": 25, "segments": { "inSupport": 100 } }
+    ],
+    "lifecycleTimeline": [
+      { "year": "2027", "value": 2, "status": "inSupport" },
+      { "year": "2028", "value": 4, "status": "inSupport" },
+      { "year": "2029", "value": 11, "status": "inSupport" },
+      { "year": "2030", "value": 1, "status": "expiring" },
+      { "year": "2031", "value": 9, "status": "expiring" },
+      { "year": "2032", "value": 8, "status": "expiring" }
+    ],
+    "topVendorsAtRisk": [
+      { "vendor": "(Blank)", "count": 26 }
+    ],
+    "riskHeatmap": {
+      "vendor": "All Vendors",
+      "moreThan12Mo": 0,
+      "lessThan6Mo": 10,
+      "sixTo12Mo": 9,
+      "expired": 26,
+      "unknown": 1083
+    },
+    "riskSummary": {
+      "inSupport": 39,
+      "lessThan6Mo": 10,
+      "sixTo12Mo": 9,
+      "expired": 26,
+      "unknown": 1083
+    },
+    "deviceDetails": [
+      { "name": "Microsoft SQL Server 2012 on v-sqlprd01", "serialId": null, "lifecycleStatus": "Expired", "productId": null, "type": "Microsoft SQL Server", "model": "2012" },
+      { "name": "Microsoft SQL Server 2012 on v-sqlprd02", "serialId": null, "lifecycleStatus": "Expired", "productId": null, "type": "Microsoft SQL Server", "model": "2012" },
+      { "name": "Microsoft IIS 8.5 on v-iis-legacy01", "serialId": null, "lifecycleStatus": "Expired", "productId": null, "type": "Microsoft IIS", "model": "8.5" },
+      { "name": "Microsoft Remote Desktop Services on v-rds01", "serialId": null, "lifecycleStatus": "Expired", "productId": null, "type": "Microsoft Remote Desktop Services", "model": "2012 R2" },
+      { "name": "Microsoft Task Scheduler on v-sched01", "serialId": null, "lifecycleStatus": "Expired", "productId": null, "type": "Microsoft Task Scheduler", "model": null },
+      { "name": "Microsoft System Center Operations Manager on v-scom01", "serialId": null, "lifecycleStatus": "Expiring", "productId": null, "type": "Microsoft SCOM", "model": "2019" },
+      { "name": "Veritas NetBackup Client on v-backup01", "serialId": null, "lifecycleStatus": "Expiring", "productId": null, "type": "Veritas NetBackup", "model": "9.0" },
+      { "name": "Veritas NetBackup Client on v-backup02", "serialId": null, "lifecycleStatus": "Expiring", "productId": null, "type": "Veritas NetBackup", "model": "9.0" },
+      { "name": "AlarmPoint Systems Java Client on v-mon", "serialId": null, "lifecycleStatus": "Unknown", "productId": null, "type": "AlarmPoint Systems AlarmPoint Java Client", "model": null },
+      { "name": "AlarmPoint Systems Java Client on v-sdp", "serialId": null, "lifecycleStatus": "Unknown", "productId": null, "type": "AlarmPoint Systems AlarmPoint Java Client", "model": null },
+      { "name": "Apache Derby Database Engine on v-fncms01", "serialId": null, "lifecycleStatus": "Unknown", "productId": null, "type": "Apache Derby Database Engine", "model": null },
+      { "name": "Apache Derby Database Engine on v-fncmsdev", "serialId": null, "lifecycleStatus": "Unknown", "productId": null, "type": "Apache Derby Database Engine", "model": null },
+      { "name": "Apache Tomcat Application Server 9.0 on v-opscntr01", "serialId": null, "lifecycleStatus": "Unknown", "productId": null, "type": "Apache Tomcat Application Server", "model": null }
+    ]
+  },
+  "eos": {
+    "label": "End of Support",
+    "kpis": {
+      "totalAssets": { "value": 1148 },
+      "inSupport": { "value": 336, "colorVariant": "teal" },
+      "expiring": { "value": 75, "colorVariant": "orange" },
+      "expired": { "value": 325, "colorVariant": "red" },
+      "unknown": { "value": 487 }
+    },
+    "lifecycleByAssetType": [
+      { "name": "Microsoft Re...", "total": 117, "segments": { "expired": 55, "inSupport": 25, "unknown": 20 } },
+      { "name": "Microsoft Sys...", "total": 110, "segments": { "expiring": 40, "inSupport": 30, "unknown": 30 } },
+      { "name": "BMC PATROL...", "total": 109, "segments": { "inSupport": 40, "unknown": 60 } },
+      { "name": "Bitdefender E...", "total": 96, "segments": { "inSupport": 90, "unknown": 10 } },
+      { "name": "Microsoft Task...", "total": 67, "segments": { "expired": 30, "unknown": 70 } }
+    ],
+    "lifecycleTimeline": [
+      { "year": "2027", "value": 1, "status": "inSupport" },
+      { "year": "2028", "value": 5, "status": "inSupport" },
+      { "year": "2029", "value": 152, "status": "inSupport" },
+      { "year": "2030", "value": 1, "status": "expiring" },
+      { "year": "2031", "value": 4, "status": "expiring" },
+      { "year": "2032", "value": 71, "status": "expiring" },
+      { "year": "2033", "value": 72, "status": "expiring" }
+    ],
+    "riskHeatmap": {
+      "vendor": "All Vendors",
+      "moreThan12Mo": 0,
+      "lessThan6Mo": 0,
+      "sixTo12Mo": 75,
+      "expired": 325,
+      "unknown": 487
+    }
+  },
+  "eoss": {
+    "label": "End of Security Support",
+    "kpis": {
+      "totalAssets": { "value": 1148 },
+      "inSupport": { "value": 0 },
+      "expiring": { "value": 0 },
+      "expired": { "value": 0 },
+      "unknown": { "value": 1148 }
+    },
+    "riskHeatmap": {
+      "vendor": "All Vendors",
+      "moreThan12Mo": 0,
+      "lessThan6Mo": 0,
+      "sixTo12Mo": 0,
+      "expired": 0,
+      "unknown": 1148
+    },
+    "message": "All 1,148 assets have Unknown lifecycle status under EOSS criteria."
+  },
+  "eol": {
+    "label": "End of Life",
+    "kpis": {
+      "totalAssets": { "value": 1148 },
+      "inSupport": { "value": 88, "colorVariant": "teal" },
+      "expiring": { "value": 76, "colorVariant": "orange" },
+      "expired": { "value": 573, "colorVariant": "red" },
+      "unknown": { "value": 487 }
+    },
+    "topVendorsAtRisk": [
+      { "vendor": "(Blank)", "count": 573 }
+    ],
+    "lifecycleTimeline": [
+      { "year": "Jan'27", "value": 72, "status": "expired" },
+      { "year": "Jul'27", "value": 4, "status": "expiring" },
+      { "year": "Jan'28", "value": 1, "status": "inSupport" },
+      { "year": "Jul'28", "value": 5, "status": "inSupport" },
+      { "year": "Jan'29", "value": 3, "status": "inSupport" },
+      { "year": "Jul'29", "value": 3, "status": "inSupport" }
+    ],
+    "riskHeatmap": {
+      "vendor": "All Vendors",
+      "moreThan12Mo": 0,
+      "lessThan6Mo": 0,
+      "sixTo12Mo": 76,
+      "expired": 573,
+      "unknown": 487
+    }
+  }
+}

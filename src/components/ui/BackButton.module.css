@@ -1,0 +1,19 @@
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-btn-back);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-pill);
+  color: rgba(255, 255, 255, 0.8);
+  padding: 5px 12px;
+  font-size: var(--fs-base);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-family: var(--font-brand);
+  backdrop-filter: var(--blur-glass);
+}
+
+.btn:hover {
+  background: var(--bg-card-hover);
+}

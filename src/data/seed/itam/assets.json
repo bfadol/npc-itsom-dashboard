@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "source": "Ru'ya – Asset Management",
+    "dateRange": { "from": "2026-02-01", "to": "2026-02-28" },
+    "lastRefresh": "2026-02-21T14:30:00Z"
+  },
+  "kpis": {
+    "totalAssets": {
+      "value": 757,
+      "colorVariant": "blue",
+      "subtitle": "Across all asset categories"
+    },
+    "onboarded": {
+      "value": 697,
+      "colorVariant": "teal",
+      "percentage": 92.1
+    },
+    "notOnboarded": {
+      "value": 29,
+      "colorVariant": "red",
+      "percentage": 7.9
+    }
+  },
+  "onboardingOverview": {
+    "onboarded": 728,
+    "notOnboarded": 29,
+    "total": 757,
+    "percentage": 96.2
+  },
+  "categoryBreakdown": [
+    { "category": "Virtual Servers", "icon": "fa-solid fa-desktop", "total": 550, "onboarded": 541, "notOnboarded": 9, "percentage": 98.4 },
+    { "category": "Physical Servers", "icon": "fa-solid fa-server", "total": 35, "onboarded": 30, "notOnboarded": 5, "percentage": 85.7 },
+    { "category": "Storage & Backup", "icon": "fa-solid fa-hard-drive", "total": 8, "onboarded": 5, "notOnboarded": 3, "percentage": 62.5 },
+    { "category": "Network Devices", "icon": "fa-solid fa-globe", "total": 77, "onboarded": 77, "notOnboarded": 0, "percentage": 100 },
+    { "category": "Database Servers", "icon": "fa-solid fa-database", "total": 49, "onboarded": 37, "notOnboarded": 12, "percentage": 75.5 },
+    { "category": "URLs", "icon": "fa-solid fa-link", "total": 38, "onboarded": 38, "notOnboarded": 0, "percentage": 100 }
+  ],
+  "categoryTotals": {
+    "total": 757,
+    "onboarded": 728,
+    "notOnboarded": 29,
+    "percentage": 96.2
+  },
+  "sizingComparison": {
+    "observability": [
+      { "service": "24/7 Observability Managed Services", "baselineSizing": "600 CIs", "currentSizing": 1200, "additionalUnitSize": 600 }
+    ],
+    "infrastructure": [
+      { "service": "Managed Windows (on-prem & cloud)", "subItems": [
+        { "type": "VM", "baselineSizing": 350, "currentSizing": 408, "additionalUnitSize": 50 },
+        { "type": "Cluster", "baselineSizing": 30, "currentSizing": 19, "additionalUnitSize": 0 },
+        { "type": "HyperV", "baselineSizing": 12, "currentSizing": 28, "additionalUnitSize": 16 },
+        { "type": "Physical", "baselineSizing": 40, "currentSizing": 41, "additionalUnitSize": 1 }
+      ]},
+      { "service": "Managed Linux", "baselineSizing": 60, "currentSizing": 35, "additionalUnitSize": 0 },
+      { "service": "Managed Storage", "baselineSizing": "200 TB", "currentSizing": 142, "additionalUnitSize": 0 },
+      { "service": "Managed Backup", "baselineSizing": "10000 GB/Month", "currentSizing": "34 TB", "additionalUnitSize": 0 }
+    ],
+    "cloud": [
+      { "service": "Managed Cloud Platform", "baselineSizing": "Platform Landing Zones: 3", "currentSizing": 3, "additionalUnitSize": 0 },
+      { "service": "Managed DevOps", "baselineSizing": "Application Landing Zones: 10", "currentSizing": "NPC: 9 / PSA: 10", "additionalUnitSize": 9 },
+      { "service": "Managed O365", "baselineSizing": "Users: 600", "currentSizing": 1741, "additionalUnitSize": 1141 }
+    ]
+  }
+}

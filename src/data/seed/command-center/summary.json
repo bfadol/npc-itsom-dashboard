@@ -1,0 +1,96 @@
+{
+  "metadata": {
+    "source": "NPC IT Operations Command Center",
+    "lastRefresh": "2026-02-21T14:30:00Z"
+  },
+  "domainHealth": [
+    {
+      "id": "itsm",
+      "label": "IT Service Management",
+      "status": "warning",
+      "score": 72,
+      "headline": "SLA compliance declining — P1 response breached 22% this week",
+      "metrics": [
+        { "label": "Open P1s", "value": "12", "trend": "up", "bad": true },
+        { "label": "MTTR", "value": "4.2h", "trend": "down", "bad": false },
+        { "label": "SLA Met", "value": "78%", "trend": "down", "bad": true },
+        { "label": "CSAT", "value": "4.3", "trend": "up", "bad": false }
+      ],
+      "actions": [
+        { "text": "Review 13 SLA-breached P1 incidents", "priority": "critical", "page": "incident" },
+        { "text": "3 problems recurring without root cause", "priority": "high", "page": "problem" }
+      ]
+    },
+    {
+      "id": "itom",
+      "label": "Infrastructure & Observability",
+      "status": "critical",
+      "score": 58,
+      "headline": "40 servers unreachable — 10 critical alarms active now",
+      "metrics": [
+        { "label": "Devices", "value": "772", "trend": "flat", "bad": false },
+        { "label": "Servers Down", "value": "40", "trend": "up", "bad": true },
+        { "label": "Critical Alarms", "value": "10", "trend": "down", "bad": true },
+        { "label": "Apps Down", "value": "5", "trend": "up", "bad": true }
+      ],
+      "actions": [
+        { "text": "40 servers not responding — escalate to infra team", "priority": "critical", "page": "observability" },
+        { "text": "Financial ERP + 1 other business app down", "priority": "critical", "page": "bizapps" },
+        { "text": "API Gateway failure affecting 3 dependent services", "priority": "high", "page": "techapps" }
+      ]
+    },
+    {
+      "id": "itam",
+      "label": "IT Asset Management",
+      "status": "healthy",
+      "score": 88,
+      "headline": "12 M365 licenses expiring in 30 days — renewal needed",
+      "metrics": [
+        { "label": "M365 Util.", "value": "91.6%", "trend": "up", "bad": false },
+        { "label": "Entra Users", "value": "1,247", "trend": "flat", "bad": false },
+        { "label": "Expiring Licenses", "value": "12", "trend": "up", "bad": true },
+        { "label": "Lifecycle Compliance", "value": "94%", "trend": "up", "bad": false }
+      ],
+      "actions": [
+        { "text": "12 M365 licenses expire within 30 days", "priority": "medium", "page": "m365" },
+        { "text": "23 devices past warranty — replacement planning needed", "priority": "low", "page": "lifecycle" }
+      ]
+    },
+    {
+      "id": "optimization",
+      "label": "FinOps & Cloud Optimization",
+      "status": "warning",
+      "score": 65,
+      "headline": "Azure spend up 8% MoM — $13.9K in January, forecast rising",
+      "metrics": [
+        { "label": "Monthly Spend", "value": "$13.9K", "trend": "up", "bad": true },
+        { "label": "MoM Change", "value": "+8%", "trend": "up", "bad": true },
+        { "label": "Savings Found", "value": "$14.7K", "trend": "up", "bad": false },
+        { "label": "CCOE Velocity", "value": "82%", "trend": "up", "bad": false }
+      ],
+      "actions": [
+        { "text": "Azure costs rose 8% — 3 subscriptions driving spike", "priority": "high", "page": "finops" },
+        { "text": "FinOps maturity at 2.4/5 — review improvement plan", "priority": "medium", "page": "finops-maturity" }
+      ]
+    }
+  ],
+  "urgentActions": [
+    { "domain": "ITOM", "text": "40 servers unreachable across production environment", "severity": "critical", "time": "Active now", "page": "observability" },
+    { "domain": "ITOM", "text": "Financial ERP system is DOWN — business impact", "severity": "critical", "time": "12 min ago", "page": "bizapps" },
+    { "domain": "ITSM", "text": "13 P1 incidents breached response SLA this week", "severity": "critical", "time": "This week", "page": "incident" },
+    { "domain": "ITOM", "text": "API Gateway failure — 3 downstream services affected", "severity": "high", "time": "47 min ago", "page": "techapps" },
+    { "domain": "ITSM", "text": "3 recurring problems without root cause assigned", "severity": "high", "time": "Ongoing", "page": "problem" },
+    { "domain": "FinOps", "text": "Azure spend +8% MoM — forecast exceeds budget", "severity": "high", "time": "Jan 2026", "page": "finops" },
+    { "domain": "ITAM", "text": "12 M365 licenses expiring within 30 days", "severity": "medium", "time": "30 days", "page": "m365" },
+    { "domain": "ITSM", "text": "2 emergency changes pending PIR completion", "severity": "medium", "time": "Overdue", "page": "change" }
+  ],
+  "trends": [
+    { "label": "SLA Compliance", "current": 78, "previous": 85, "unit": "%", "bad": true },
+    { "label": "MTTR", "current": 4.2, "previous": 4.5, "unit": "hrs", "bad": false },
+    { "label": "Infrastructure Availability", "current": 94.8, "previous": 99.2, "unit": "%", "bad": true },
+    { "label": "Azure Monthly Cost", "current": 13921, "previous": 12890, "unit": "$", "bad": true },
+    { "label": "CSAT Score", "current": 4.3, "previous": 4.1, "unit": "/5", "bad": false },
+    { "label": "Change Success Rate", "current": 91, "previous": 88, "unit": "%", "bad": false }
+  ],
+  "executiveSummary": "Infrastructure is degraded with 40 servers unreachable and Financial ERP down. ITSM SLA compliance dropped to 78% with 13 P1 breaches this week. Azure costs trending above budget. Asset management is stable."
+}

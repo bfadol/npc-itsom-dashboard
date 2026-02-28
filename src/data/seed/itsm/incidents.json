@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "source": "Ru'ya – ITSM Incident Mgmt. Module",
+    "dateRange": { "from": "2026-02-01", "to": "2026-02-21" },
+    "lastRefresh": "2026-02-21T14:30:00Z"
+  },
+  "kpis": {
+    "openP1": { "value": 12, "icon": "fa-solid fa-circle-xmark", "colorVariant": "red", "trend": { "direction": "up", "delta": "+3", "label": "vs Last Week", "isGood": false } },
+    "openP2": { "value": 34, "icon": "fa-solid fa-circle-exclamation", "colorVariant": "orange", "trend": { "direction": "down", "delta": "-5", "label": "vs Last Week", "isGood": true } },
+    "resolvedToday": { "value": 28, "icon": "fa-solid fa-circle-check", "colorVariant": "teal", "trend": { "direction": "up", "delta": "+12", "label": "vs Yesterday", "isGood": true } },
+    "totalOpen": { "value": 87, "icon": "fa-solid fa-chart-bar", "colorVariant": "gold", "trend": { "direction": "down", "delta": "-8", "label": "vs Last Week", "isGood": true } },
+    "csat": { "value": 4.3, "max": 5.0, "stars": 4, "colorVariant": "gold", "progressBar": { "value": 86, "gradient": "linear-gradient(90deg,#8a6520,#b8966a)" }, "trend": { "direction": "up", "delta": "+0.2", "label": "vs Last Month", "isGood": true }, "subtitle": "Customer Satisfaction Score | Monthly" },
+    "fcr": { "value": 72, "unit": "%", "colorVariant": "teal", "progressBar": { "value": 72, "gradient": "linear-gradient(90deg,#1a7a60,#1abc9c)" }, "trend": { "direction": "up", "delta": "+5%", "label": "vs Last Month", "isGood": true }, "subtitle": "Resolved on 1st contact ÷ total logged × 100 | Monthly" },
+    "mttr": { "value": 4.2, "unit": "hrs", "colorVariant": "blue", "progressBar": { "value": 58, "gradient": "linear-gradient(90deg,#1a3a6c,#2471a3)" }, "trend": { "direction": "down", "delta": "-18 min", "label": "vs Last Month", "isGood": true }, "subtitle": "Total resolution time ÷ resolved incidents | Monthly" },
+    "avgHandling": { "value": 38, "unit": "min", "colorVariant": "orange", "progressBar": { "value": 48, "gradient": "linear-gradient(90deg,#7a3c0a,#e67e22)" }, "trend": { "direction": "down", "delta": "-4 min", "label": "vs Last Month", "isGood": true }, "subtitle": "Total handle time ÷ total incidents handled | Monthly" }
+  },
+  "responseSLA": [
+    { "priority": "P1", "label": "CRITICAL", "target": "15 min", "met": 47, "total": 60, "percentage": 78, "color": "red" },
+    { "priority": "P2", "label": "HIGH", "target": "30 min", "met": 119, "total": 140, "percentage": 85, "color": "orange" },
+    { "priority": "P3", "label": "MEDIUM", "target": "2 hrs", "met": 282, "total": 300, "percentage": 94, "color": "blue" },
+    { "priority": "P4", "label": "LOW", "target": "8 hrs", "met": 196, "total": 200, "percentage": 98, "color": "green" }
+  ],
+  "resolutionSLA": [
+    { "priority": "P1", "label": "CRITICAL", "target": "4 hrs", "met": 43, "total": 60, "percentage": 72, "color": "red" },
+    { "priority": "P2", "label": "HIGH", "target": "8 hrs", "met": 113, "total": 140, "percentage": 81, "color": "orange" },
+    { "priority": "P3", "label": "MEDIUM", "target": "24 hrs", "met": 273, "total": 300, "percentage": 91, "color": "blue" },
+    { "priority": "P4", "label": "LOW", "target": "72 hrs", "met": 192, "total": 200, "percentage": 96, "color": "green" }
+  ],
+  "volumeTrend": [
+    { "month": "Sep", "volume": 110, "csat": 3.8 },
+    { "month": "Oct", "volume": 123, "csat": 4.0 },
+    { "month": "Nov", "volume": 117, "csat": 3.9 },
+    { "month": "Dec", "volume": 130, "csat": 4.1 },
+    { "month": "Jan", "volume": 125, "csat": 4.2 },
+    { "month": "Feb", "volume": 119, "csat": 4.3 }
+  ],
+  "csatBreakdown": [
+    { "label": "Very Satisfied", "value": 48, "color": "#1a9e8a" },
+    { "label": "Satisfied", "value": 38, "color": "#a29576" },
+    { "label": "Dissatisfied", "value": 14, "color": "#b8223f" }
+  ],
+  "heatmap": [
+    { "day": "Mon", "hours": [1,2,3,4,4,3,2,3,4,5,3,2] },
+    { "day": "Tue", "hours": [0,1,3,5,4,4,3,2,3,4,2,1] },
+    { "day": "Wed", "hours": [1,2,4,3,5,5,4,3,2,3,2,1] },
+    { "day": "Thu", "hours": [0,1,2,4,3,4,5,4,3,2,1,0] },
+    { "day": "Fri", "hours": [2,3,4,3,2,3,4,5,4,3,2,1] }
+  ],
+  "heatmapHours": ["6","7","8","9","10","11","12","13","14","15","16","17"],
+  "openByStatusPriority": {
+    "segments": [
+      { "priority": "P1", "count": 12, "color": "#8b1837" },
+      { "priority": "P2", "count": 34, "color": "#c97b30" },
+      { "priority": "P3", "count": 28, "color": "#0e3a82" },
+      { "priority": "P4", "count": 13, "color": "#051b44" }
+    ],
+    "table": [
+      { "priority": "P1", "severity": "critical", "new": 3, "inProgress": 7, "pending": 2, "total": 12, "avgMTTR": "4.2h" },
+      { "priority": "P2", "severity": "major", "new": 8, "inProgress": 18, "pending": 8, "total": 34, "avgMTTR": "8.1h" },
+      { "priority": "P3", "severity": "minor", "new": 10, "inProgress": 12, "pending": 6, "total": 28, "avgMTTR": "18.3h" },
+      { "priority": "P4", "severity": "low", "new": 5, "inProgress": 5, "pending": 3, "total": 13, "avgMTTR": "42.6h" }
+    ]
+  }
+}

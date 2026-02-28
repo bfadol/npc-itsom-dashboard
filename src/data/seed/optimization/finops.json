@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "source": "Azure Cost Management",
+    "dateRange": { "from": "2026-01-01", "to": "2026-01-31" },
+    "lastRefresh": "2026-02-09T00:00:00Z",
+    "platform": "Azure"
+  },
+  "executiveOverview": {
+    "kpis": {
+      "consumption": {
+        "value": 13921,
+        "unit": "$",
+        "icon": "fa-solid fa-money-bill-wave",
+        "colorVariant": "red",
+        "subtitle": "January 2026"
+      },
+      "momChange": {
+        "value": 8,
+        "unit": "%",
+        "direction": "up",
+        "icon": "fa-solid fa-chart-line",
+        "colorVariant": "red",
+        "subtitle": "vs December 2025"
+      },
+      "forecast": {
+        "value": 15020,
+        "unit": "$",
+        "prefix": "~",
+        "icon": "fa-solid fa-chart-bar",
+        "colorVariant": "gold",
+        "subtitle": "Projected Feb 2026"
+      },
+      "annualSavings": {
+        "value": 14664,
+        "unit": "$",
+        "icon": "fa-solid fa-coins",
+        "colorVariant": "teal",
+        "subtitle": "Projected FY 2026"
+      }
+    },
+    "subscriptions": 7,
+    "resourceGroups": 26,
+    "resources": 286
+  },
+  "monthlyConsumptionTrend": [
+    { "month": "Sep", "value": 8420 },
+    { "month": "Oct", "value": 9150 },
+    { "month": "Nov", "value": 10230 },
+    { "month": "Dec", "value": 12890 },
+    { "month": "Jan", "value": 13921 }
+  ],
+  "budgetVsConsumption": {
+    "subscriptions": [
+      { "name": "ITSM-Production", "budget": 1162, "consumption": 1283, "budgetConsumedPct": 110.4 },
+      { "name": "ITOM-Production", "budget": 9156, "consumption": 10663, "budgetConsumedPct": 116.5 },
+      { "name": "APM-NonProduction", "budget": 692, "consumption": 177, "budgetConsumedPct": 25.5 },
+      { "name": "ITSM-NonProduction", "budget": 725, "consumption": 362, "budgetConsumedPct": 49.9 },
+      { "name": "Identity Landing Zone", "budget": 323, "consumption": 22, "budgetConsumedPct": 6.8 },
+      { "name": "Management Landing Zone", "budget": 1100, "consumption": 873, "budgetConsumedPct": 79.4 },
+      { "name": "Portal-Production", "budget": 582, "consumption": 540, "budgetConsumedPct": 92.9 }
+    ],
+    "totals": {
+      "budget": 13741,
+      "consumption": 13921,
+      "budgetConsumedPct": 101.3
+    },
+    "budgetUtilization": {
+      "consumed": { "value": 13920, "percentage": 98.73 },
+      "remaining": { "value": 179, "percentage": 1.27 }
+    }
+  },
+  "costDrivers": {
+    "top5Subscriptions": [
+      { "name": "ITOM-Production", "cost": 10663 },
+      { "name": "ITSM-Production", "cost": 1283 },
+      { "name": "Mgmt Landing Zone", "cost": 873 },
+      { "name": "Portal-Production", "cost": 540 },
+      { "name": "ITSM-NonProduction", "cost": 362 }
+    ],
+    "top5SubscriptionsCoverage": 98.57,
+    "top5Services": [
+      { "name": "Compute", "cost": 11258 },
+      { "name": "Storage", "cost": 1752 },
+      { "name": "Mgmt & Governance", "cost": 453 },
+      { "name": "Networking", "cost": 237 },
+      { "name": "Web", "cost": 133 }
+    ],
+    "top5ServicesCoverage": 99.37,
+    "top5Resources": [
+      { "name": "aks-itom-prd-we-01", "cost": 6459 },
+      { "name": "stitomprdwe01", "cost": 1546 },
+      { "name": "aks-itomaksnode-...", "cost": 730 },
+      { "name": "vmdiscoveryitom...", "cost": 342 },
+      { "name": "vmitsmctpprdwe1", "cost": 278 }
+    ],
+    "top5ResourcesCoverage": 67.20,
+    "top5ResourceGroups": [
+      { "name": "MC_RG-ITOM-WKLOAD-PRD-WE-01_AKS-ITOM-PRD-WE-01_WESTEUROPE", "cost": 7896, "delta": 730, "deltaDirection": "up" },
+      { "name": "rg-itom-wkload-prd-we-01", "cost": 2617, "delta": 5, "deltaDirection": "up" },
+      { "name": "RG-ITSM-WKLOAD-PRD-WE-01", "cost": 1258, "delta": 99, "deltaDirection": "up" },
+      { "name": "rg-itsm-wkload-npd-we-01", "cost": 357, "delta": 125, "deltaDirection": "up" },
+      { "name": "mc_rg-portal-wkload-prd-we-01_aks-portal-prd-we-01_westeurope", "cost": 293, "delta": -5, "deltaDirection": "down" }
+    ],
+    "top5ResourceGroupsCoverage": 89.23
+  },
+  "recommendations": {
+    "total": 808,
+    "open": 312,
+    "completed": 398,
+    "postponed": 34,
+    "dismissed": 64,
+    "openRecommendations": [
+      { "recommendation": "Abandoned Route Table", "costGroup": "(Unallocated)", "subscription": "SA – MPN", "resourceGroup": "test", "resource": "kubetest48", "owner": "admin@malomatia.com" },
+      { "recommendation": "Improve resiliency by migrating your Azure Cosmos DB acco...", "costGroup": "(Unallocated)", "subscription": "RK-MSDN", "resourceGroup": "RG1", "resource": "dp-420", "owner": "rk.engineer@malomatia.com" },
+      { "recommendation": "Install SQL best practices assessment on your SQL VM", "costGroup": "(Unallocated)", "subscription": "RK-MSDN", "resourceGroup": "Beachwatch", "resource": "BeatchwatchVM", "owner": "rk.engineer@malomatia.com" },
+      { "recommendation": "Switch to Azure Monitor based alerts for backup", "costGroup": "(Unallocated)", "subscription": "AJ – MPN", "resourceGroup": "test-rg-001", "resource": "test", "owner": "aj.admin@malomatia.com" },
+      { "recommendation": "This Resource IS NOT IN same Location AS the Resource Group", "costGroup": "Business Unit 3", "subscription": "CloudMonitor – DEV001 – ...", "resourceGroup": "mrg-cloudmonitor-analytics...", "resource": "aaapi-ba563pelunnv6", "owner": "cloudmon.admin@malomatia.com" },
+      { "recommendation": "This Resource IS NOT IN same Location AS the Resource Group", "costGroup": "Business Unit 3", "subscription": "CloudMonitor – DEV001 – ...", "resourceGroup": "mrg-cloudmonitor-analytics...", "resource": "aa-appinsights-ba563pelunnv6", "owner": "cloudmon.admin@malomatia.com" },
+      { "recommendation": "This Resource IS NOT IN same Location AS the Resource Group", "costGroup": "Business Unit 3", "subscription": "CloudMonitor – DEV001 – ...", "resourceGroup": "mrg-cloudmonitor-analytics...", "resource": "aa-law-ba563pelunnv6", "owner": "cloudmon.admin@malomatia.com" },
+      { "recommendation": "This Resource IS NOT IN same Location AS the Resource Group", "costGroup": "Business Unit 3", "subscription": "CloudMonitor – DEV001 – ...", "resourceGroup": "mrg-cloudmonitor-analytics...", "resource": "aaplan-ba563pelunnv6", "owner": "cloudmon.admin@malomatia.com" },
+      { "recommendation": "This Resource IS NOT IN same Location AS the Resource Group", "costGroup": "Business Unit 3", "subscription": "CloudMonitor – DEV001 – ...", "resourceGroup": "mrg-cloudmonitor-analytics...", "resource": "aasba563pelunnv6", "owner": "cloudmon.admin@malomatia.com" },
+      { "recommendation": "This Resource IS NOT IN same Location AS the Resource Group", "costGroup": "Business Unit 3", "subscription": "CloudMonitor – DEV001 – ...", "resourceGroup": "mrg-cloudmonitor-analytics...", "resource": "acadfpracba563pelunnv6", "owner": "cloudmon.admin@malomatia.com" }
+    ],
+    "completedRecommendations": [
+      { "recommendation": "Rightsize or shutdown underutilised virtual machines", "costGroup": "Business Unit 1", "subscription": "ITSM-Production", "resourceGroup": "RG-ITSM-WKLOAD-PRD-WE-01", "resource": "vmitsmctpprdwe1", "owner": "ops@npc.qa" },
+      { "recommendation": "Enable soft delete for Azure Backup", "costGroup": "Business Unit 2", "subscription": "ITOM-Production", "resourceGroup": "rg-itom-wkload-prd-we-01", "resource": "stitomprdwe01", "owner": "ops@npc.qa" },
+      { "recommendation": "Use Azure Hybrid Benefit for Windows Server", "costGroup": "Business Unit 1", "subscription": "ITSM-Production", "resourceGroup": "RG-ITSM-WKLOAD-PRD-WE-01", "resource": "vmdiscoveryitom", "owner": "ops@npc.qa" },
+      { "recommendation": "Configure diagnostic settings for storage accounts", "costGroup": "Business Unit 3", "subscription": "ITOM-Production", "resourceGroup": "rg-itom-wkload-prd-we-01", "resource": "aks-itomaksnode", "owner": "ops@npc.qa" }
+    ]
+  }
+}

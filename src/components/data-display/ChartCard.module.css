@@ -1,0 +1,27 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: var(--radius-2xl);
+  padding: var(--pad-card);
+  backdrop-filter: var(--blur-glass);
+  color: var(--text-primary);
+  transition: border-color var(--transition-fast) ease;
+}
+
+.title {
+  color: var(--text-secondary);
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-medium);
+  line-height: 1;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sub {
+  font-size: var(--fs-xs);
+  color: var(--text-muted);
+  font-weight: var(--fw-normal);
+  letter-spacing: 0;
+}
